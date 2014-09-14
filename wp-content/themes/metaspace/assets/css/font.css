@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'NotoSans Bold';
+  src: url('../fonts/NotoSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeUI Bold';
+  src: url('../fonts/SegoeUI-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'SegoeUI Semibold';
+  src: url('../fonts/SegoeUI-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Semibold';
+  src: url('../fonts/OpenSans-Semibold.ttf');
+}
