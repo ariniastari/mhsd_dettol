@@ -26,7 +26,7 @@
             <a class="navbar-brand" href="#first">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-inner.png" alt="">
             </a>
-            <a href="http://www.dettol.co.id" target="_blank" class="hidden-lg hidden-md hidden-sm">
+            <a href="http://www.dettol.co.id" target="_blank" class="hidden-lg hidden-sm">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
             </a>
           </div>
@@ -39,7 +39,7 @@
             <li class="active"><a href="" data-toggle="modal" data-target="#modal-thanks">beri <br/>dukungan</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-        <div class="navbar-right hidden-xs">
+        <div class="navbar-right hidden-xs hidden-sm hidden-md">
           <a href="http://www.dettol.co.id" target="_blank">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
           </a>
@@ -56,28 +56,80 @@
       <div class="row first" id="first">
         <div class="col-md-6 col-xs-12">
           <div class="cycle-slideshow" data-cycle-timeout="5000" data-cycle-speed="2000">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide3.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide4.jpg" alt="" width="100%" class="img-responsive">
+            <?php
+              if( have_rows('intro_photo_gallery') ):
+
+                  while ( have_rows('intro_photo_gallery') ) : the_row();
+            ?>
+
+                      <img src="<?php the_sub_field('image_top_left'); ?>" alt="" width="100%" class="img-responsive">
+                      
+            <?php
+                  endwhile;
+
+              else :
+
+                  // no rows found
+
+              endif;
+            ?>
           </div>
           <div class="cycle-slideshow" data-cycle-timeout="9000" data-cycle-speed="2000">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide3.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide4.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" alt="" width="100%" class="img-responsive">
+            <?php
+              if( have_rows('intro_photo_gallery') ):
+
+                  while ( have_rows('intro_photo_gallery') ) : the_row();
+            ?>
+
+                      <img src="<?php the_sub_field('image_top_right'); ?>" alt="" width="100%" class="img-responsive">
+                      
+            <?php
+                  endwhile;
+
+              else :
+
+                  // no rows found
+
+              endif;
+            ?>
           </div>
           <div class="cycle-slideshow" data-cycle-timeout="10000" data-cycle-speed="2000">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide3.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide4.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" alt="" width="100%" class="img-responsive">
+            <?php
+              if( have_rows('intro_photo_gallery') ):
+
+                  while ( have_rows('intro_photo_gallery') ) : the_row();
+            ?>
+
+                      <img src="<?php the_sub_field('image_bottom_left'); ?>" alt="" width="100%" class="img-responsive">
+                      
+            <?php
+                  endwhile;
+
+              else :
+
+                  // no rows found
+
+              endif;
+            ?>
           </div>
           <div class="cycle-slideshow" data-cycle-timeout="7000" data-cycle-speed="2000">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide4.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide3.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" alt="" width="100%" class="img-responsive">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" alt="" width="100%" class="img-responsive">
+            <?php
+              if( have_rows('intro_photo_gallery') ):
+
+                  while ( have_rows('intro_photo_gallery') ) : the_row();
+            ?>
+
+                      <img src="<?php the_sub_field('image_bottom_right'); ?>" alt="" width="100%" class="img-responsive">
+                      
+            <?php
+                  endwhile;
+
+              else :
+
+                  // no rows found
+
+              endif;
+            ?>
           </div>
           <div class="btn-video" data-toggle="modal" data-target="#modal-video">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video.png" alt="">
@@ -85,25 +137,7 @@
           </div>
         </div>
         <div class="col-md-6 col-xs-12">
-          <p>
-            Di Indonesia, 2 dari 5 kematian anak di bawah 5 tahun dan 1 dari 5 kematian anak 5 – 14 tahun disebabkan diare dan infeksi saluran pernapasan.* Risiko ini bisa dikurangi lebih dari setengahnya dengan kebiasaan cuci tangan pakai sabun.**
-          </p>
-          <p>
-            Sentuhan Sehat Dettol, merupakan inisiatif membangun fasilitas cuci tangan yang layak di tempat yang membutuhkan. Berikan dukungan Anda agar lebih banyak anak yang terlindungi.
-          </p>
-          <p>
-            Ayo berikan dukungan Anda agar mereka bisa hidup lebih sehat.
-          </p>
-          <p>
-            1 KLIK <span>ANDA MEMBANTU</span><br/>
-            1 ANAK <span>YANG MEMBUTUHKAN</span>
-          </p>
-          <p class="last">
-            *Riset Kesehatan Dasar, Kementrian Kesehatan 2007<br/>
-            **Penelitian oleh Stephen P Luby, Mubina Agboatwalla, 
-            Daniel R Feikin, John Painter, Ward Billhimer MS,  
-            Arshad Altaf, Robert M Hoekstra
-          </p> 
+          <?php the_field('intro_description'); ?>
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="" class="right btn-dukung" data-toggle="modal" data-target="#modal-thanks">
         </div>
         <div class="modal fade" id="modal-video">
@@ -119,14 +153,13 @@
       </div>
 
       <div class="row second" id="second">
-        <div class="col-md-4 left-cont col-xs-12">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg-second.jpg" class="img-responsive" alt="">
-          <h3>mereka yang membutuhkan</h3>
-          <div class="separator"></div>
-          <p>
-            Kesehatan anak-anak Indonesia merupakan kepentingan bangsa untuk
-            memberikan masa depan terbaik untuk mereka.
-          </p>
+        <div class="col-md-4 col-xs-12">
+          <div class="left-cont">
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg-second.jpg" class="img-responsive" alt=""> -->
+            <h3>mereka yang membutuhkan</h3>
+            <div class="separator"></div>
+            <?php the_field("second_description"); ?>
+          </div>
         </div>
         <div class="col-md-8 carousel col-xs-12">
           <div class="jcarousel">
@@ -214,7 +247,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-5 col-md-offset-4 col-xs-12">
+            <div class="col-md-8 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Dukungan yang Sudah Diterima</div>
               <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Wall of Pictures</div>
             </div>
@@ -225,94 +258,347 @@
                   <div class="modal-body clearfix">
                     <h3>Dukungan yang Diterima</h3>
                     <p>Puluhan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
-                    <div class="col-md-10 col-md-offset-1 col-xs-12">
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
+                      <div class="cycle-slideshow school-pagination clearfix" data-cycle-slides=".page" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".pager">
+                        <div class="col-md-12 page clearfix">
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 page clearfix">
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 page clearfix">
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 page clearfix">
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-xs-6">
+                            <div class="school-cont">
+                              SDN 8 Pulogadung
+                            </div>
+                          </div>
+                        </div>
+                        <div class="control clearfix">
+                          <div class="prev">
+                            < Prev
+                          </div>
+                          <div class="pager"></div>
+
+                          <div class="next">
+                            Next >
+                          </div>
                         </div>
                       </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 col-xs-12">
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 col-xs-12">
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-10 col-md-offset-1 col-xs-12">
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-xs-6">
-                        <div class="school-cont">
-                          SDN 8 Pulogadung
-                        </div>
-                      </div>
-                    </div>
+
                   </div>
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
@@ -410,18 +696,18 @@
         </div>
       </div>
       <div class="row forth">
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-3 col-sm-3 hidden-xs">
           Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
         </div>
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col-sm-3 col-xs-6">
           Lorem ipsum dolor sit amet #misihidupsehat
           <i class="fa fa-twitter"></i> - @johnsmith
         </div>
-        <div class="col-md-3 col-xs-6">
+        <div class="col-md-3 col-sm-3 col-xs-6">
           Lorem ipsum dolor sit amet #misihidupsehat
           <i class="fa fa-twitter"></i> - @johnsmith
         </div>
-        <div class="col-md-3 hidden-xs">
+        <div class="col-md-3 col-sm-3 hidden-xs">
           Lorem ipsum dolor sit amet #misihidupsehat
           <i class="fa fa-twitter"></i> - @johnsmith
         </div>

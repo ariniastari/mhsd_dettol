@@ -1,14 +1,3 @@
-/*
-Theme Name: Metaspace
-Theme URI: http://metaspace.co
-Description: Metaspace for Dettol MHSD
-Version: 1
-Author: Metaspace
-Author URI: http://metaspace.co
-*/
-
-
-
 
 
 /* Sticky footer styles
@@ -91,7 +80,7 @@ code {
     }
 
     .logo-bg{
-      background: url(assets/img/logo.png);
+      background: url(../img/logo.png);
       width: 310px;
       height: 176px;
       margin-top: -10px;
@@ -255,7 +244,7 @@ code {
   .carousel-inner .next        { left:  33%; }
 
   .second .left-cont {
-    background: url(assets/img/bg-second.jpg);
+    background: url(../img/bg-second.jpg);
     width: 100%;
     -webkit-background-size: cover;
          -o-background-size: cover;
@@ -299,7 +288,7 @@ code {
     }
 
       .third .hands-bg{
-        background: url(assets/img/hands.jpg);
+        background: url(../img/hands.jpg);
         width: 100%;
         height: 702px;
         -webkit-background-size: cover;
@@ -414,7 +403,7 @@ code {
             margin-left: 10%;
           }
           .fb-white{
-            background: url(assets/img/fb-white.png);
+            background: url(../img/fb-white.png);
             width: 28px;
             height: 28px;
             float: left;
@@ -422,7 +411,7 @@ code {
           }
 
           .twitter-white{
-            background: url(assets/img/twitter-white.png);
+            background: url(../img/twitter-white.png);
             width: 27px;
             height: 28px;
             float: left;
@@ -570,7 +559,7 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-butuh{
-    background: url(assets/img/bg-modal.jpg);
+    background: url(../img/bg-modal.jpg);
     width: 995px;
     height: 317px;
     -webkit-border-radius: 0;
@@ -621,7 +610,7 @@ have a fixed width and height (but it's not required).
       }
 
 #modal-dukung .modal-content{
-  background: url(assets/img/bg-dukungan.jpg);
+  background: url(../img/bg-dukungan.jpg);
   width: 1056px;
   height: 550px;
   -webkit-border-radius: 0;
@@ -696,7 +685,7 @@ have a fixed width and height (but it's not required).
 
 #modal-wallofpic .modal-content,
 #modal-thanks .modal-content{
-  background: url(assets/img/bg-wallofpic.jpg);
+  background: url(../img/bg-wallofpic.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;

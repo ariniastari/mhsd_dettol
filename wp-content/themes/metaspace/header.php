@@ -9,9 +9,9 @@
 
     <!-- CSS -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/font.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/MetroJs.min.css" rel="stylesheet">
-    <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
     
 
   </head>

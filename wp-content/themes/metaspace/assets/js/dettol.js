@@ -13,4 +13,16 @@ $(document).ready(function(){
       }
     });
   });
+  $(window).load(function(){
+    if($(window).width() > 992){
+      var heightLeft = $('.first > .col-md-6:first-child').height();
+      $('.first > .col-md-6:nth-child(2)').css('height',heightLeft);
+    }
+  });
+  $(window).resize(function(){
+    if($(window).width() > 992){
+      var heightLeft = $('.first > .col-md-6:first-child').height();
+      $('.first > .col-md-6:nth-child(2)').css('height',heightLeft);
+    }
+  });
 });
