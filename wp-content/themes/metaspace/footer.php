@@ -49,6 +49,12 @@
             $(this).removeClass('active');
         });
     });
+
+    $(function() {
+      if (window.location.hash.indexOf("thank_you") !== -1) {
+          $("#modal-thanks").modal();
+      }
+    });
     </script>
   </body>
 </html>
