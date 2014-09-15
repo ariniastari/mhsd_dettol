@@ -138,7 +138,7 @@
         </div>
         <div class="col-md-6 col-xs-12">
           <?php the_field('intro_description'); ?>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="" class="right btn-dukung" data-toggle="modal" data-target="#modal-thanks">
+          <a href="http://localhost:8888/wp-login.php?loginFacebook=1"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="" class="right btn-dukung"></a>
         </div>
         <div class="modal fade" id="modal-video">
           <div class="modal-dialog">
