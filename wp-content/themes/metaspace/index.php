@@ -3,12 +3,12 @@
   <body>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=385772391524911&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
@@ -159,9 +159,7 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href='http://www.facebook.com/share.php?u=http://www.dettol.co.id' target="_blank">
-                <div class="fb-white"></div>
-              </a>
+              <div class="fb-white" data-href="<?php echo get_site_url(); ?>"></div>
               <a href="">
                 <div class="twitter-white"></div>
               </a>
