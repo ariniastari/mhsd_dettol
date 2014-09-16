@@ -477,18 +477,11 @@ function new_fb_login_url() {
 }
 
 function new_fb_redirect() {
-  
-  $redirect = get_site_transient( nextend_uniqid().'_fb_r');
 
-  if (!$redirect || $redirect == '' || $redirect == new_fb_login_url()) {
-    if (isset($_GET['redirect'])) {
-      $redirect = $_GET['redirect'];
-    } else {
-      $redirect = site_url();
-    }
-  }
+  d(site_url());
+  $redirect = site_url('#thank_you');
+
   header('LOCATION: ' . $redirect);
-  delete_site_transient( nextend_uniqid().'_fb_r');
   exit;
 }
 
