@@ -172,6 +172,7 @@ code {
     width: 50%;
     margin-left: 5%;
     float: left;
+    line-height: 18px;
   }
 
     .btn-dukung{
@@ -831,10 +832,10 @@ have a fixed width and height (but it's not required).
     margin-top: 10px;
   }*/
 
-  .logo-bg a:last-child{
+  /*.logo-bg a:last-child{
     margin-top: 18px;
     margin-left: 30px;
-  }
+  }*/
 
   .first{
     margin-top: 117px;
@@ -891,7 +892,7 @@ have a fixed width and height (but it's not required).
 
 @media only screen and (max-width:939px) and (min-width: 769px){
   .navbar-nav{
-    margin-left: -150px !important;
+    margin-left: -120px !important;
   }
   .navbar-default .navbar-nav li a{
     padding-left: 10px !important;
@@ -978,40 +979,32 @@ have a fixed width and height (but it's not required).
   .navbar-default .navbar-collapse{
     padding: 0px;
     width: 100%;
-    margin-top: -52px;
+    margin-top: -62px;
     position: absolute;
     z-index: -1;
     background: rgb(255, 255, 255);
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
     .navbar-nav{
-      margin-left: 0;
+      margin-left: 0 !important;
     }
 
     .navbar-default .navbar-nav li a{
       min-width: 100%;
     }
 
-  .logo-bg a{
-    float: left;
+  .logo-bg{
+    margin-left: -100px;
+    margin-top: 0px;
   }
 
-    .logo-bg .navbar-brand img{
-      width: 70%;
-      margin-left: 40px;
-      margin-top: 25px;
-    }
+  .logo-bg .navbar-brand{
+    float: left;
+    margin-left: 110px;
+  }
 
-    .logo-bg a img{
-      width: 70%;
-      margin-left: 0px;
-    }
 
-      .logo-bg a:last-child{
-        margin-top: -80px;
-        margin-left: 11px;
-      }
 
     .navbar-default .navbar-toggle{
       border: none;
@@ -1180,6 +1173,7 @@ have a fixed width and height (but it's not required).
     width: 320px;
     height: 100%;
     background-size: cover;
+    margin: auto;
   }
 
   #modal-thanks .modal-content{
@@ -1219,10 +1213,83 @@ have a fixed width and height (but it's not required).
 
   .pic-collage{
     position: absolute;
+    top: 29px;
   }
 
     .pic-collage img{
       float: left;
+    }
+
+    .pic-collage img:nth-child(3){
+      float: none;
+    }
+
+    .pic-collage img:first-child{
+      margin-left: 130px;
+    }
+
+    .pic-collage img:nth-child(4){
+      margin-left: 58px;
+    }
+
+    .pic-collage img:nth-child(7){
+      float: none;
+    }
+
+    .pic-collage img:nth-child(8){
+      margin-left: 64px;
+    }
+
+    .pic-collage img:nth-child(12){
+      float: none;
+    }
+
+    .pic-collage img:nth-child(13){
+      margin-left: 15px;
+    }
+
+    .pic-collage img:nth-child(19){
+      margin-left: 74px;
+    }
+
+    .pic-collage img:nth-child(27){
+      margin-left: 72px;
+    }
+
+    .pic-collage img:nth-child(29){
+      margin-left: 50px;
+    }
+
+    .pic-collage img:nth-child(37){
+      margin-left: 74px;
+    }
+
+    .pic-collage img:nth-child(43){
+      float: none;
+    }
+
+    .pic-collage img:nth-child(44){
+      margin-left: 93px;
+    }
+
+    .pic-collage img:nth-child(51){
+      margin-left: 112px;
+    }
+
+    .pic-collage img:nth-child(56){
+      float: none;
+    }
+
+    .pic-collage img:nth-child(57){
+      margin-left: 138px;
+    }
+
+    .pic-collage img:nth-child(61){
+      float: none;
+    }
+
+    .pic-collage img:nth-child(62){
+      margin-left: 179px;
     }
 
   .hand-border{

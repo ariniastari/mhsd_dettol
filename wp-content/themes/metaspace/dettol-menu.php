@@ -10,11 +10,6 @@
       <a class="navbar-brand" href="#first">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-inner.png" alt="">
       </a>
-      <!-- ADD HIDDEN MD -->
-      <a href="http://www.dettol.co.id" target="_blank" class="hidden-lg hidden-sm hidden-md">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
-      </a>
-      <!-- END OF ADD HIDDEN MD -->
     </div>
   </div>
   <div class="navbar-collapse collapse">
