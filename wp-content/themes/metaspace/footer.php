@@ -36,6 +36,13 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/cycle.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dettol.js"></script>
     <script>
+
+    $(".twitter").click(function(e) {
+      e.preventDefault();
+      var href = $(e.target).attr('href');
+      window.open(href, "tweet", "height=300,width=550,resizable=1") 
+    });
+
     $(function() {
       $('.jcarousel').jcarousel();
       $('.jcarousel-pagination').jcarouselPagination({

@@ -25,14 +25,14 @@
         <div class="col-md-12">
           <div class="hands-bg">
             <h4>
-              beri dukungan
+              Beri Dukungan Anda!
             </h4>
             <h1>
-              SATU KLIK<br/>SATU ANAK CUCI TANGAN
+              1 KLIK ANDA MEMBANTU <br/> 1 ANAK YANG MEMBUTUHKAN
             </h1>
             <div class="col-md-8 col-md-offset-2">
               <p>
-                Ikut berkomitmen bersama Dettol untuk memberi masa depan yang lebih baik untuk anak-anak Indonesia. Satu klik dari anda akan memberi kesempatan hidup sehat untuk satu anak Indonesia.
+                Dukung dan sebarkan gerakan ini agar lebih banyak anak-anak terlindungi.
               </p>
             </div>
             <div class="col-md-8 col-md-offset-3 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
@@ -49,7 +49,7 @@
             </div>
             <div class="col-md-7 col-md-offset-4 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-7 col-sm-offset-3">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Dukungan yang Sudah Diterima</div>
-              <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Wall of Pictures</div>
+              <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
             <div class="modal fade" id="modal-dukung">
               <div class="modal-dialog">
@@ -135,7 +135,7 @@
                     <!-- END NEW -->
                     <div class="col-md-6 col-xs-12 col-sm-4">
                       <h3>
-                        wall of pictures
+                        GALERI DUKUNGAN ANDA
                       </h3>
                       <p>
                         Mereka yang telah memberikan dukungan kepada<br/> Misi Hidup Sehat Dettol
@@ -150,7 +150,7 @@
                           }
                         ?>
                       </div>
-                      <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
+                      <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan Misi Hidup Sehat Dettol. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
                     </div>
                   </div>
@@ -163,9 +163,8 @@
               <div class="fb-white">
               </div>
             </a>
-            <a href="https://twitter.com/share">
-              <div class="twitter-white"></div>
-            </a>
+              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di">
+              </a>
             </div>
             <div class="modal fade" id="modal-thanks">
               <div class="modal-dialog">
@@ -203,7 +202,7 @@
                         <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
                         </a>
-                        <a href="https://twitter.com/share">
+                        <a href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di" target="_blank">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
                         </a>
                       </div>

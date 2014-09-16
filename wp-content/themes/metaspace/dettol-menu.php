@@ -16,8 +16,8 @@
     <ul class="nav navbar-nav">
       <li><a href="#second">mereka yang membutuhkan</a></li>
       <li><a href="#third">Dukungan yang diterima</a></li>
-      <li><a href="#third">wall of pictures</a></li>
-      <li class="active"><a href="" data-toggle="modal" data-target="#modal-thanks">beri <br/>dukungan</a></li>
+      <li><a href="#third">GALERI DUKUNGAN ANDA</a></li>
+      <li class="active"><a href="" data-toggle="modal" data-target="#modal-thanks">ULURKAN <br/>TANGAN</a></li>
     </ul>
   </div><!--/.nav-collapse -->
   <!-- ADD HIDDEN SM -->
