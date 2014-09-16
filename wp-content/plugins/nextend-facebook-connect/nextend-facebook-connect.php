@@ -478,7 +478,7 @@ function new_fb_login_url() {
 
 function new_fb_redirect() {
 
-  d(site_url());
+  d(site_url('#thank_you'));
   $redirect = site_url('#thank_you');
 
   header('LOCATION: ' . $redirect);
