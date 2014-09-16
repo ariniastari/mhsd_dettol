@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
   <body>
     <div id="fb-root"></div>
@@ -70,27 +70,14 @@
             </p>
             <div class="col-md-6 col-md-offset-3 col-xs-12">
               <div class="counter clearfix">
-                <div class="counter-number">
-                  2
-                </div>
-                <div class="counter-number">
-                  5
-                </div>
-                <div class="counter-number">
-                  0
-                </div>
-                <div class="counter-number">
-                  0
-                </div>
-                <div class="counter-number">
-                  0
-                </div>
-                <div class="counter-number">
-                  0
-                </div>
-                <div class="counter-number">
-                  0
-                </div>
+                <?php
+                  foreach (query_vote_split_to_array() as $value) { ?>
+                    <div class="counter-number">
+                      <?php echo $value; ?>
+                    </div>
+                 <?php 
+                  }
+                ?>
               </div>
             </div>
             <div class="col-md-8 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4">
@@ -465,27 +452,14 @@
                         Mereka yang telah memberikan dukungan kepada<br/> Misi Hidup Sehat Dettol
                       </p>
                       <div class="counter-modal clearfix">
-                        <div class="counter-num-modal">
-                          2
-                        </div>
-                        <div class="counter-num-modal">
-                          5
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
+                        <?php
+                          foreach (query_vote_split_to_array() as $value) { ?>
+                            <div class="counter-num-modal">
+                              <?php echo $value; ?>
+                            </div>
+                         <?php 
+                          }
+                        ?>
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
@@ -545,18 +519,16 @@
         <div class="col-md-3 col-sm-3 hidden-xs">
           Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
         </div>
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          Lorem ipsum dolor sit amet #misihidupsehat
-          <i class="fa fa-twitter"></i> - @johnsmith
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          Lorem ipsum dolor sit amet #misihidupsehat
-          <i class="fa fa-twitter"></i> - @johnsmith
-        </div>
-        <div class="col-md-3 col-sm-3 hidden-xs">
-          Lorem ipsum dolor sit amet #misihidupsehat
-          <i class="fa fa-twitter"></i> - @johnsmith
-        </div>
+        <?php
+          $tweets = searchTweets(3, '#misihidupsehat');
+          foreach ($tweets['statuses'] as $value) { ?>
+            <div class="col-md-3 col-sm-3 col-xs-6">
+              <?php echo $value['text']; ?>    
+              <i class="fa fa-twitter"></i> - <?php echo "@".$value['user']['screen_name']; ?>
+            </div>  
+          <?php
+          }
+        ?>
       </div>
     </div>
 

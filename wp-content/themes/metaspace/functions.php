@@ -27,4 +27,12 @@ function add_my_post_types_to_query( $query ) {
     $query->set( 'post_type', array( 'dettol' ) );
   return $query;
 }
+
+function query_vote_split_to_array(){
+	global $wpdb;
+	$vote_count = $wpdb->get_var( "SELECT COUNT(*) FROM wp_vote_data" );
+	$number_formatted = sprintf("%07d", $vote_count);
+	$array = str_split(strval($number_formatted));
+	return $array;
+}
 ?>

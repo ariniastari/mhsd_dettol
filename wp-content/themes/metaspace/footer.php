@@ -51,7 +51,7 @@
     });
 
     $(function() {
-      if (window.location.hash.indexOf("thank_you") !== -1) {
+      if (window.location.hash.indexOf("_=_") !== -1) {
           $("#modal-thanks").modal();
       }
     });
