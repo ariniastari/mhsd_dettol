@@ -141,27 +141,14 @@
                         Mereka yang telah memberikan dukungan kepada<br/> Misi Hidup Sehat Dettol
                       </p>
                       <div class="counter-modal clearfix">
-                        <div class="counter-num-modal">
-                          2
-                        </div>
-                        <div class="counter-num-modal">
-                          5
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
-                        <div class="counter-num-modal">
-                          0
-                        </div>
+                        <?php
+                          foreach (query_vote_split_to_array() as $value) { ?>
+                            <div class="counter-num-modal">
+                              <?php echo $value; ?>
+                            </div>
+                         <?php 
+                          }
+                        ?>
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
