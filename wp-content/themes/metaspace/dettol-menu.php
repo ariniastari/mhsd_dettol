@@ -16,19 +16,19 @@
     <ul class="nav navbar-nav">
       <li><a href="#second">mereka yang membutuhkan</a></li>
       <li><a href="#third">Dukungan yang diterima</a></li>
-      <li><a href="#third">GALERI DUKUNGAN ANDA</a></li>
+      <li><a class="wider" href="#third">GALERI DUKUNGAN ANDA</a></li>
       <li class="active"><a href="" data-toggle="modal" data-target="#modal-thanks">ULURKAN <br/>TANGAN</a></li>
     </ul>
   </div><!--/.nav-collapse -->
   <!-- ADD HIDDEN SM -->
-  <div class="navbar-right hidden-xs">
+  <div class="navbar-right hidden-xs hidden-sm">
     <a href="http://www.dettol.co.id" target="_blank">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
     </a>
-    <a href="https://www.facebook.com/DettolIndonesia" class="hidden-sm">
+    <a href="https://www.facebook.com/DettolIndonesia" class="hidden-sm hidden-md">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fb-header.png" alt="" class="img-responsive">
     </a>
-    <a href="https://twitter.com/Dettol_ID" class="hidden-sm">
+    <a href="https://twitter.com/Dettol_ID" class="hidden-sm hidden-md">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter-header.png" alt="" class="img-responsive">
     </a>
   </div>

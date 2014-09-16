@@ -75,6 +75,10 @@ code {
         text-align: center;
       }
 
+      .navbar-default .navbar-nav li a.wider{
+        max-width: 160px;
+      }
+
     .navbar-brand{
       padding: 0;
     }
@@ -970,7 +974,7 @@ have a fixed width and height (but it's not required).
     font-size: 12px;
   }
   .navbar-default .navbar-nav li:nth-child(3) a{
-    width: 100px;
+    width: 140px;
   }
 
   .third .hands-bg .counter{
