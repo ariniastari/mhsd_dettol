@@ -35,16 +35,26 @@
                 Dukung dan sebarkan gerakan ini agar lebih banyak anak-anak terlindungi.
               </p>
             </div>
-            <div class="col-md-8 col-md-offset-3 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
+            <div class="col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
               <div class="counter clearfix">
                 <?php
+                  $counter = count(query_vote_split_to_array());
                   foreach (query_vote_split_to_array() as $value) { ?>
                     <div class="counter-number">
-                      <?php echo $value; ?>
+                      <?php 
+                        if($counter==1){
+                          echo "${value}*"; 
+                        } else {
+                          echo $value; 
+                        }
+                      ?>
                     </div>
                  <?php 
+                    $counter--;
                   }
                 ?>
+                <div class="clearfix"></div>
+                <p style="margin-top:10px;">* Mencakup dukungan yang diterima melalui tanda tangan siswa-siswa sekolah</p>
               </div>
             </div>
             <div class="col-md-7 col-md-offset-4 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-7 col-sm-offset-3">
