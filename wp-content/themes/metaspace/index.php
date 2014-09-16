@@ -159,11 +159,13 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>/#thankyou">
+              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
               <div class="fb-white">
               </div>
             </a>
-                <div class="twitter-white"></div>
+            <a href="https://twitter.com/share">
+              <div class="twitter-white"></div>
+            </a>
             </div>
             <div class="modal fade" id="modal-thanks">
               <div class="modal-dialog">
@@ -198,10 +200,10 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari galeri Sentuhan Sehat Dettol. </p>
                       <div class="clearfix">
-                        <a href="">
+                        <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://twitter.com/share">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
                         </a>
                       </div>
