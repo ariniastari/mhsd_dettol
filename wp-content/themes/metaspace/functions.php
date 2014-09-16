@@ -35,4 +35,10 @@ function query_vote_split_to_array(){
 	$array = str_split(strval($number_formatted));
 	return $array;
 }
+
+function get_images_facebook(){
+	global $wpdb;
+	$data = $wpdb->get_results( "SELECT profile_picture FROM wp_vote_data ORDER BY id DESC LIMIT 103" );
+	return $data;
+}
 ?>
