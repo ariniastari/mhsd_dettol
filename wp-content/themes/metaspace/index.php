@@ -159,11 +159,13 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>/#thankyou">
+              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
               <div class="fb-white">
               </div>
             </a>
-                <div class="twitter-white"></div>
+            <a href="https://twitter.com/share">
+              <div class="twitter-white"></div>
+            </a>
             </div>
             <div class="modal fade" id="modal-thanks">
               <div class="modal-dialog">
