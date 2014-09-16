@@ -29,10 +29,12 @@
             <h1>
               SATU KLIK<br/>SATU ANAK CUCI TANGAN
             </h1>
-            <p>
-              Ikut berkomitmen bersama Dettol untuk memberi masa depan yang lebih baik untuk anak-anak Indonesia. Satu klik dari anda akan memberi kesempatan hidup sehat untuk satu anak Indonesia.
-            </p>
-            <div class="col-md-6 col-md-offset-3 col-xs-12">
+            <div class="col-md-8 col-md-offset-2">
+              <p>
+                Ikut berkomitmen bersama Dettol untuk memberi masa depan yang lebih baik untuk anak-anak Indonesia. Satu klik dari anda akan memberi kesempatan hidup sehat untuk satu anak Indonesia.
+              </p>
+            </div>
+            <div class="col-md-8 col-md-offset-3 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
               <div class="counter clearfix">
                 <?php
                   foreach (query_vote_split_to_array() as $value) { ?>
@@ -44,7 +46,7 @@
                 ?>
               </div>
             </div>
-            <div class="col-md-8 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4">
+            <div class="col-md-7 col-md-offset-4 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-7 col-sm-offset-3">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Dukungan yang Sudah Diterima</div>
               <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Wall of Pictures</div>
             </div>
@@ -405,10 +407,125 @@
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <div class="modal-body clearfix">
-                    <div class="col-md-6">
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hand-wop.png" alt="" class="img-responsive">
+                    <!-- NEW -->
+                    <!-- ADD HAND MASK -->
+                    <div class="col-md-6 hidden-xs col-sm-8">
+
+                      <div class="hand-mask">
+                        <div class="pic-collage">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
+                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="hand-border">
+                          
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-6">
+                    <!-- END NEW -->
+                    <div class="col-md-6 col-xs-12 col-sm-4">
                       <h3>
                         wall of pictures
                       </h3>
@@ -416,14 +533,27 @@
                         Mereka yang telah memberikan dukungan kepada<br/> Misi Hidup Sehat Dettol
                       </p>
                       <div class="counter-modal clearfix">
-                        <?php
-                          foreach (query_vote_split_to_array() as $value) { ?>
-                            <div class="counter-num-modal">
-                              <?php echo $value; ?>
-                            </div>
-                         <?php 
-                          }
-                        ?>
+                        <div class="counter-num-modal">
+                          2
+                        </div>
+                        <div class="counter-num-modal">
+                          5
+                        </div>
+                        <div class="counter-num-modal">
+                          0
+                        </div>
+                        <div class="counter-num-modal">
+                          0
+                        </div>
+                        <div class="counter-num-modal">
+                          0
+                        </div>
+                        <div class="counter-num-modal">
+                          0
+                        </div>
+                        <div class="counter-num-modal">
+                          0
+                        </div>
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
