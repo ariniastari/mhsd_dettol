@@ -176,7 +176,7 @@ function new_fb_login_action() {
             }
             $ID = wp_create_user($sanitized_user_login, $random_password, $user_profile['email']);
             if (!is_wp_error($ID)) {
-              wp_new_user_notification($ID, $random_password);
+              // wp_new_user_notification($ID, $random_password);
               $user_info = get_userdata($ID);
               wp_update_user(array(
                 'ID' => $ID,
