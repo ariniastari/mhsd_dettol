@@ -13,7 +13,7 @@
 Saya mendukung inisiatif Misi Hidup Sehat Dettol membangun ratusan fasilitas cuci tangan di tempat-tempat yang membutuhkan.
 1 Klik untuk 1 anak yang membutuhkan. Ayo ikut dukung Misi Hidup Sehat Dettol agar lebih banyak anak terlindungi!
 " />
-    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/logo-inner.png" />
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/logo-for-fb.jpg" />
 
     <!-- CSS -->
     <link href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.css" rel="stylesheet">
