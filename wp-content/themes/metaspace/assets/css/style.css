@@ -343,7 +343,7 @@ code {
         }
 
         .third .hands-bg .counter{
-          margin: 40px auto 60px auto;
+          margin: 40px auto 10px auto;
         }
 
           .counter-number{
@@ -357,6 +357,12 @@ code {
             line-height: 43px;
             
           }
+
+        .keterangan {
+          margin-top:10px; 
+          font-size: 12px !important;
+          margin-bottom: 60px;
+        }
 
           .btn-green,
           .btn-green:active{
@@ -978,6 +984,10 @@ have a fixed width and height (but it's not required).
   }
 
   .third .hands-bg .counter{
+    margin-bottom: 5px;
+  }
+
+  .keterangan {
     margin-bottom: 30px;
   }
   .counter-number{
@@ -1330,6 +1340,7 @@ have a fixed width and height (but it's not required).
     top: 0;
     left: -16px;
   }
+
 /* END STYLE */
 
 @media (max-width: 1056px){
