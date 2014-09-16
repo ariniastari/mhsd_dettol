@@ -159,7 +159,7 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php get_site_url(); ?>&redirect_uri=<?php get_site_url(); ?>">
+              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
               <div class="fb-white">
               </div>
             </a>
