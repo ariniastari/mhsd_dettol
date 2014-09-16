@@ -1,4 +1,4 @@
-<?php get_header(); dd(searchTweets(3, '#misihidupsehat'));?>
+<?php get_header(); //dd(searchTweets(3, '#misihidupsehat'));?>
 
   <body>
     <div id="fb-root"></div>
@@ -20,6 +20,7 @@
       <?php get_template_part('dettol', 'intro'); ?>
 
       <?php get_template_part('dettol', 'need'); ?>
+
       <div class="row third" id="third">
         <div class="col-md-12">
           <div class="hands-bg">
@@ -119,111 +120,12 @@
 
                       <div class="hand-mask">
                         <div class="pic-collage">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive"> -->
+                          <?php
+                            foreach (get_images_facebook() as $value) { ?>
+                              <img src="<?php echo $value->profile_picture ?>" alt="" class="img-responsive">
+                           <?php 
+                            }
+                          ?>
                         </div>
                         <div class="hand-border">
                           
@@ -288,112 +190,12 @@
 
                       <div class="hand-mask">
                         <div class="pic-collage">
-
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face5.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face6.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face7.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face8.jpg" alt="" class="img-responsive">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/face9.jpg" alt="" class="img-responsive"> -->
+                          <?php
+                            foreach (get_images_facebook() as $value) { ?>
+                              <img src="<?php echo $value->profile_picture ?>" alt="" class="img-responsive">
+                           <?php 
+                            }
+                          ?>
                         </div>
                         <div class="hand-border">
                           

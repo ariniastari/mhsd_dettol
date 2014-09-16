@@ -190,7 +190,7 @@ function new_fb_login_action() {
                   'wp_vote_data',
                   array(
                     'email' => $user_profile['email'], 
-                    'profile_picture' => 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=large',
+                    'profile_picture' => 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=small',
                     'gender' => $user_profile['gender']
                   ),
                   array(
