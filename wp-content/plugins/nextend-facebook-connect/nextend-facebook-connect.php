@@ -114,7 +114,6 @@ For login page
 */
 
 function new_fb_login() {
-
   if ($_REQUEST['loginFacebook'] == '1') {
     new_fb_login_action();
   }
