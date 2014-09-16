@@ -83,7 +83,7 @@
   </div>
   <div class="col-md-6 col-xs-12">
     <?php the_field('intro_description'); ?>
-    <a href="http://metaspace.co/wp_mhsd/wp-login.php?loginFacebook=1"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="" class="right btn-dukung"></a>
+    <a href="http://metaspace.co/wp_mhsd/wp-login.php?loginFacebook=1"><div class="btn-dukung"></div></a>
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">

@@ -181,6 +181,20 @@ code {
       z-index: 100;
       cursor: pointer;
       right: 0;
+      background: url(../img/btn-dukung.png);
+      width: 228px;
+      height: 213px;
+      -webkit-transition: 0.5s;
+         -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+           -o-transition: 0.5s;
+              transition: 0.5s;
+    }
+
+    .btn-dukung:hover{
+      background: url(../img/btn-dukung-hover.png);
+      width: 228px;
+      height: 213px;
     }
 
     .btn-video{
@@ -272,8 +286,9 @@ code {
     font-family: 'NotoSans', Arial, sans-serif;
     width: 80%;
     color: #585858;
-    font-size: 19px;
+    font-size: 17px;
     margin: 30px 20px 0 20px;
+    line-height: 30px;
   }
 
 .third{
@@ -526,6 +541,16 @@ have a fixed width and height (but it's not required).
     /* Required only for block elements like <li>'s */
     float: left;
     width: 320px;
+    cursor: pointer;
+}
+
+.jcarousel li img:hover{
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
 }
 
 .jcarousel-pagination{
@@ -565,6 +590,7 @@ have a fixed width and height (but it's not required).
     -webkit-border-radius: 0;
             border-radius: 0;
     position: relative;
+    margin: auto;
   }
 
     .modal-body{
@@ -622,7 +648,7 @@ have a fixed width and height (but it's not required).
 }
 
   #modal-dukung h3{
-    color: #5AA015;
+    color: #0e5303;
     font-size: 24px;
     font-family: 'OpenSans Bold', Arial, sans-serif;
     text-transform: uppercase;
@@ -638,7 +664,7 @@ have a fixed width and height (but it's not required).
   }
 
   #modal-dukung .col-md-3 .school-cont{
-    background: #85c248;
+    background: #0e5303;
     text-transform: uppercase;
     color: #fff;
     font-family: 'OpenSans Semibold', Arial, sans-serif;
