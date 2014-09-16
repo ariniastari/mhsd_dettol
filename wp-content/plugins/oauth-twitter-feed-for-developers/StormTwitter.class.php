@@ -151,7 +151,21 @@ class StormTwitter {
     $connection = new TwitterOAuth($key, $secret, $token, $token_secret);
     $result = $connection->get('search/tweets', $options);
 
-    return $result;
+    if (is_array($result) && isset($result['errors'])) {
+      if (is_array($result) && isset($result['errors'][0]) && isset($result['errors'][0]['message'])) {
+        $last_error = $result['errors'][0]['message'];
+      } else {
+        $last_error = $result['errors'];
+      }
+      return array('error'=>'Twitter said: '.json_encode($last_error));
+    } else {
+      if (is_array($result)) {
+        return $result;
+      } else {
+        $last_error = 'Something went wrong with the twitter request: '.json_encode($result);
+        return array('error'=>$last_error);
+      }
+    }
   }
   
   private function oauthGetTweets($screenname,$options) {
