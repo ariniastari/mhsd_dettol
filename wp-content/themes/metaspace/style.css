@@ -93,7 +93,7 @@ code {
     }
 
     .logo-bg{
-      background: url(../img/logo.png);
+      background: url(assets/img/logo.png);
       width: 310px;
       height: 176px;
       margin-top: -10px;
@@ -257,7 +257,7 @@ code {
   .carousel-inner .next        { left:  33%; }
 
   .second .left-cont {
-    background: url(../img/bg-second.jpg);
+    background: url(assets/img/bg-second.jpg);
     width: 100%;
     -webkit-background-size: cover;
          -o-background-size: cover;
@@ -301,7 +301,7 @@ code {
     }
 
       .third .hands-bg{
-        background: url(../img/hands.jpg);
+        background: url(assets/img/hands.jpg);
         width: 100%;
         height: 702px;
         -webkit-background-size: cover;
@@ -415,7 +415,7 @@ code {
             margin-left: 10%;
           }
           .fb-white{
-            background: url(../img/fb-white.png);
+            background: url(assets/img/fb-white.png);
             width: 28px;
             height: 28px;
             float: left;
@@ -423,7 +423,7 @@ code {
           }
 
           .twitter-white{
-            background: url(../img/twitter-white.png);
+            background: url(assets/img/twitter-white.png);
             width: 27px;
             height: 28px;
             float: left;
@@ -571,7 +571,7 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-butuh{
-    background: url(../img/bg-modal.jpg);
+    background: url(assets/img/bg-modal.jpg);
     width: 995px;
     height: 317px;
     -webkit-border-radius: 0;
@@ -622,7 +622,7 @@ have a fixed width and height (but it's not required).
       }
 
 #modal-dukung .modal-content{
-  background: url(../img/bg-dukungan.jpg);
+  background: url(assets/img/bg-dukungan.jpg);
   width: 1056px;
   margin: auto;
   height: 550px;
@@ -700,7 +700,7 @@ have a fixed width and height (but it's not required).
 }
 #modal-wallofpic .modal-content,
 #modal-thanks .modal-content{
-  background: url(../img/bg-wallofpic.jpg);
+  background: url(assets/img/bg-wallofpic.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;
@@ -1239,7 +1239,7 @@ have a fixed width and height (but it's not required).
     }
 
   .hand-border{
-    background: url(../img/handborder.png);
+    background: url(assets/img/handborder.png);
     width: 538px;
     height: 614px;
     position: absolute;

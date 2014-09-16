@@ -8,11 +8,11 @@
     
     <div class="logo-bg">
       <a class="navbar-brand" href="#first">
-        <img src="assets/img/logo-inner.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-inner.png" alt="">
       </a>
       <!-- ADD HIDDEN MD -->
       <a href="http://www.dettol.co.id" target="_blank" class="hidden-lg hidden-sm hidden-md">
-        <img src="assets/img/logo-right.png" alt="" class="img-responsive">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
       </a>
       <!-- END OF ADD HIDDEN MD -->
     </div>
@@ -28,13 +28,13 @@
   <!-- ADD HIDDEN SM -->
   <div class="navbar-right hidden-xs">
     <a href="http://www.dettol.co.id" target="_blank">
-      <img src="assets/img/logo-right.png" alt="" class="img-responsive">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
     </a>
     <a href="https://www.facebook.com/DettolIndonesia" class="hidden-sm">
-      <img src="assets/img/fb-header.png" alt="" class="img-responsive">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fb-header.png" alt="" class="img-responsive">
     </a>
     <a href="https://twitter.com/Dettol_ID" class="hidden-sm">
-      <img src="assets/img/twitter-header.png" alt="" class="img-responsive">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter-header.png" alt="" class="img-responsive">
     </a>
   </div>
   <!-- END OF ADD HIDDEN SM -->
