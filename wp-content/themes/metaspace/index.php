@@ -93,6 +93,11 @@
 
                             if($counter % 16 == 0){
                               ?>
+                                <div class="col-md-3 col-xs-6">
+                              <div class="school-cont">
+                                <?php echo $set['nama_sekolah'];?>
+                              </div>
+                            </div>
                                 </div>
                               <?php
                             }
