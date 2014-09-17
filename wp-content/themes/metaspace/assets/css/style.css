@@ -186,8 +186,8 @@ code {
       cursor: pointer;
       right: 0;
       background: url(../img/btn-dukung.png);
-      width: 228px;
-      height: 213px;
+      width: 219px;
+      height: 236px;
       -webkit-transition: 0.5s;
          -moz-transition: 0.5s;
           -ms-transition: 0.5s;
@@ -197,8 +197,8 @@ code {
 
     .btn-dukung:hover{
       background: url(../img/btn-dukung-hover.png);
-      width: 228px;
-      height: 213px;
+      width: 219px;
+      height: 216px;
     }
 
     .btn-video{
