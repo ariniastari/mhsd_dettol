@@ -232,7 +232,7 @@
                   <div class="modal-body clearfix">
                     <div class="col-xs-12 text-center">
                       <p>
-                        Kamu akan di redirect ke facebook untuk memberikan dukungan
+                        Anda akan diarahkan ke Facebook untuk memberikan dukungan
                       </p>
                       <a class="btn-tosca" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">Lanjutkan</a>
                     </div>
