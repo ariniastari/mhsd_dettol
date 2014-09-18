@@ -234,6 +234,22 @@
                 </div><!-- /.modal-content -->
               </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
+            <div class="modal fade" id="modal-vote">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="modal-body clearfix">
+                    <div class="col-xs-12 text-center">
+                      <p>
+                        Kamu akan di redirect ke facebook untuk memberikan dukungan
+                      </p>
+                      <a class="btn-tosca" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">Lanjutkan</a>
+                    </div>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
           </div>
         </div>
       </div>

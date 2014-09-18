@@ -722,13 +722,31 @@ have a fixed width and height (but it's not required).
 .modal-dialog{
   width: 100%;
 }
+
+#modal-vote .btn-tosca {
+  float: none;
+}
+#modal-vote p {
+  margin-bottom: 25px;
+}
 #modal-wallofpic .modal-content,
-#modal-thanks .modal-content{
+#modal-thanks .modal-content, #modal-vote .modal-content{
   background: url(../img/bg-wallofpic.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;
   margin: auto;
+}
+
+#modal-vote .modal-content {
+  height: auto;
+  width: 320px;
+}
+
+@media(min-width: 992px) {
+  #modal-vote .modal-content {
+    width: 550px;
+  }
 }
 
   #modal-wallofpic .modal-body,

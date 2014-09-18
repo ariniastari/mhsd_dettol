@@ -83,7 +83,7 @@
   </div>
   <div class="col-md-6 col-xs-12">
     <?php the_field('intro_description'); ?>
-    <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1"><div class="btn-dukung"></div></a>
+    <a data-toggle="modal" data-target="#modal-vote"><div class="btn-dukung"></div></a>
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">
