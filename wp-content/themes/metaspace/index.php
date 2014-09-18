@@ -176,10 +176,10 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
-              <div class="fb-white">
-              </div>
-            </a>
+              <a href="javascript:fbShare('<?php echo get_site_url(); ?>', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">
+                <div class="fb-white">
+                </div>
+              </a>
               <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di">
               </a>
             </div>
@@ -216,7 +216,7 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari galeri Sentuhan Sehat Dettol. </p>
                       <div class="clearfix">
-                        <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo get_site_url(); ?>&redirect_uri=<?php echo get_site_url(); ?>">
+                        <a href="javascript:fbShare('<?php echo get_site_url(); ?>', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
                         </a>
                         <a href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di" target="_blank">
