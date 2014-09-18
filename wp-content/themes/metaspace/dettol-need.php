@@ -25,7 +25,6 @@
                 <img src="<?php echo $value['second_gallery_image']; ?>" alt="" class="img-responsive" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
               </li>
               <?php
-              $counter = 1; 
               }
               $counter ++;
             }
