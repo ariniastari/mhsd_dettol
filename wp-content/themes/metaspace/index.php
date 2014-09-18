@@ -38,28 +38,19 @@
             <div class="col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
               <div class="counter clearfix">
                 <?php
-                  $counter = count(query_vote_split_to_array());
                   foreach (query_vote_split_to_array() as $value) { ?>
                     <div class="counter-number">
                       <?php 
-                        if($counter==1){
-                          echo "${value}*"; 
-                        } else {
-                          echo $value; 
-                        }
+                        echo $value; 
                       ?>
                     </div>
                  <?php 
-                    $counter--;
                   }
                 ?>
                 <div class="clearfix"></div>
               </div>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-              <p class="keterangan">* Mencakup dukungan yang diterima melalui tanda tangan siswa-siswa sekolah</p>
-            </div>
-            <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-7 col-sm-offset-3">
+            <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Dukungan yang Sudah Diterima</div>
               <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
