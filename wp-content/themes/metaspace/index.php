@@ -158,7 +158,7 @@
                           }
                         ?>
                       </div>
-                      <p>Anda dapat menjadi bagian dari galeri <strong>Sentuhan Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan Misi Hidup Sehat Dettol. </p>
+                      <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan Misi Hidup Sehat Dettol. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
                     </div>
                   </div>
@@ -203,9 +203,9 @@
                         terima kasih atas kepedulian anda
                       </h3>
                       <p>
-                        Ayo sebarkan Sentuhan Sehat Dettol agar lebih banyak orang yang tergerak untuk membuat perubahan bagi mereka yang membutuhkan.
+                        Ayo sebarkan Misi Hidup Sehat Dettol agar lebih banyak orang yang tergerak untuk membuat perubahan bagi mereka yang membutuhkan.
                       </p>
-                      <p>Klik share dan jadilah bagian dari galeri Sentuhan Sehat Dettol. </p>
+                      <p>Klik share dan jadilah bagian dari galeri Misi Hidup Sehat Dettol. </p>
                       <div class="clearfix">
                         <a href="javascript:fbShare('<?php echo get_site_url(); ?>', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
