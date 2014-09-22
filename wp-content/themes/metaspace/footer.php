@@ -46,7 +46,7 @@
     $(".twitter").click(function(e) {
       e.preventDefault();
       var href = $(e.target).attr('href');
-      a = window.open(href, "tweet", "height=300,width=550,resizable=1") 
+      window.open(href, "tweet", "height=300,width=550,resizable=1") 
     });
 
     $(function() {
@@ -69,7 +69,7 @@
       }
 
       if (window.location.hash.indexOf("#_-_") !== -1) {
-        a.close();
+        window.close();
       }
     });
     </script>
