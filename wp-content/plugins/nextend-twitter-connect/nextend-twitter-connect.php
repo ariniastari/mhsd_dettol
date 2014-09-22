@@ -183,6 +183,19 @@ function new_twitter_login_action() {
                 'display_name' => $resp->name,
                 'twitter' => $resp->screen_name
               ));
+              $wpdb->insert(
+                  'wp_vote_data',
+                  array(
+                    'email' => $email, 
+                    'profile_picture' => $resp->profile_image_url,
+                    'gender' => 'N/A'
+                  ),
+                  array(
+                    '%s',
+                    '%s',
+                    '%s'
+                  ) 
+                );
               do_action('nextend_twitter_user_registered', $ID, $resp, $tmhOAuth);
             } else {
               return;
