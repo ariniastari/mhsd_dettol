@@ -125,8 +125,12 @@
                     <!-- NEW -->
                     <!-- ADD HAND MASK -->
                     <div class="col-md-6 hidden-xs col-sm-8">
-                      <?php $user_ID = get_current_user_id(); ?> 
-                      <?php echo get_avatar( $user_ID, 100 ); ?>
+                      <?php 
+                        $user_ID = get_current_user_id();
+                        if($user_ID) { 
+                          echo get_avatar( $user_ID, 100 ); 
+                        }
+                      ?>
                       <div class="hand-mask">
 
                         <div class="pic-collage">
@@ -184,8 +188,12 @@
                     <!-- NEW -->
                     <!-- ADD HAND MASK -->
                     <div class="col-md-6 hidden-xs col-sm-8">
-                      <?php $user_ID = get_current_user_id(); ?> 
-                      <?php echo get_avatar( $user_ID, 100 ); ?>
+                      <?php 
+                        $user_ID = get_current_user_id();
+                        if($user_ID) { 
+                          echo get_avatar( $user_ID, 100 ); 
+                        }
+                      ?>
                       <div class="hand-mask">
                         <div class="pic-collage">
                           <?php
