@@ -480,7 +480,7 @@ function new_fb_redirect() {
 
   $site_url = site_url();
   $site_url_back = site_url("#thank_you");
-  $redirect = "https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=".$site_url."&redirect_uri=".$site_url_back;
+  $redirect = "https://www.facebook.com/sharer/sharer.php?s=100&p[url]=".$site_url;
 
   header('LOCATION: ' . $redirect);
   exit;

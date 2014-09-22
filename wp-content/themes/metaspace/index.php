@@ -60,7 +60,7 @@
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <div class="modal-body clearfix">
                     <h3>Dukungan yang Diterima</h3>
-                    <p>Puluhan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
+                    <p>Ratusan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
                       <div class="cycle-slideshow school-pagination clearfix" data-cycle-slides=".page" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".pager">
                         <?php
                           $dataset = get_field('daftar_sekolah');
@@ -164,7 +164,7 @@
                           }
                         ?>
                       </div>
-                      <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan Misi Hidup Sehat Dettol. </p>
+                      <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
                     </div>
                   </div>
@@ -215,19 +215,19 @@
                         <span style="font-size: 20px;">atas kepedulian anda</span>
                       </h3>
                       <p>
-                        Ayo sebarkan Misi Hidup Sehat Dettol agar lebih banyak orang yang tergerak untuk membuat perubahan bagi mereka yang membutuhkan.
+                        Sebarkan inisiatif Misi Hidup Sehat Dettol! Bersama kita dapat membantu lebih banyak anak-anak agar tetap sehat, agar harapan dan impian mereka terus hidup.
                       </p>
-                      <p>Klik share dan jadilah bagian dari galeri Misi Hidup Sehat Dettol. </p>
+                      <p>Klik share dan jadilah bagian dari Galeri <strong>Misi Hidup Sehat Dettol</strong>. </p>
                       <div class="clearfix">
-                        <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
-                          <div class="btn-share-fb"></div>
+                        <a class="twitter btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
                         <a href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
                           <div class="btn-share-tw"></div>
                         </a>
                       </div>
                       <h5>
-                        Bergabunglah Bersama Keluarga Dettol Indonesia
+                        Bergabunglah bersama Keluarga Dettol Indonesia. <br/>Dapatkan berbagai inspirasi untuk melindungi keluarga Anda.
+
                       </h5>
                       <div class="fb-like" data-href="https://www.facebook.com/DettolIndonesia" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                       <a href="https://twitter.com/Dettol_ID" class="twitter-follow-button" data-show-count="false">Follow @Dettol_ID</a>

@@ -339,7 +339,7 @@ code {
         .third .hands-bg p{
           font-size: 16px;
           font-family: 'NotoSans', Arial, sans-serif;
-          line-height: 30px;
+          line-height: 23px;
           text-align: center;
         }
 
@@ -347,7 +347,7 @@ code {
           margin: 40px auto 60px auto;
         }
 
-          div.btn-share-fb{
+          a.btn-share-fb{
             background: url(../img/share-fb.png);
             width: 181px;
             height: 35px;
@@ -359,7 +359,7 @@ code {
                     transition: 0.3s;
           }
 
-          div.btn-share-fb:hover{
+          a.btn-share-fb:hover{
             background-position: 0 -35px;
           }
 
@@ -679,7 +679,7 @@ have a fixed width and height (but it's not required).
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > p{
-        color: #585858;
+        color: #000;
         font-family: 'OpenSans Light', Arial, sans-serif;
         font-size: 16px;
         margin-bottom: 20px;
@@ -821,6 +821,7 @@ have a fixed width and height (but it's not required).
 
     #modal-thanks .modal-body .col-md-6:last-child h3{
       margin-top: 100px;
+      font-size: 40px;
     }
 
 
