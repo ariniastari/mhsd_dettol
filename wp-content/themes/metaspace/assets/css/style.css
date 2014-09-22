@@ -150,6 +150,7 @@ code {
 
     color: #FFF;
     margin: 0;
+    padding-top: 15px;
     height: 576px;
   }
 
@@ -180,7 +181,7 @@ code {
   }
 
     .btn-dukung{
-      margin: -60px 20px 0 0;
+      margin: -75px 20px 0 0;
       position: fixed;
       z-index: 100;
       cursor: pointer;
@@ -343,7 +344,7 @@ code {
         }
 
         .third .hands-bg .counter{
-          margin: 40px auto 10px auto;
+          margin: 40px auto 60px auto;
         }
 
           .counter-number{
@@ -357,12 +358,6 @@ code {
             line-height: 43px;
             
           }
-
-        .keterangan {
-          margin-top:10px; 
-          font-size: 12px !important;
-          margin-bottom: 60px;
-        }
 
           .btn-green,
           .btn-green:active{
@@ -722,13 +717,31 @@ have a fixed width and height (but it's not required).
 .modal-dialog{
   width: 100%;
 }
+
+#modal-vote .btn-tosca {
+  float: none;
+}
+#modal-vote p {
+  margin-bottom: 25px;
+}
 #modal-wallofpic .modal-content,
-#modal-thanks .modal-content{
+#modal-thanks .modal-content, #modal-vote .modal-content{
   background: url(../img/bg-wallofpic.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;
   margin: auto;
+}
+
+#modal-vote .modal-content {
+  height: auto;
+  width: 320px;
+}
+
+@media(min-width: 992px) {
+  #modal-vote .modal-content {
+    width: 550px;
+  }
 }
 
   #modal-wallofpic .modal-body,
@@ -981,14 +994,6 @@ have a fixed width and height (but it's not required).
   }
   .navbar-default .navbar-nav li:nth-child(3) a{
     width: 140px;
-  }
-
-  .third .hands-bg .counter{
-    margin-bottom: 5px;
-  }
-
-  .keterangan {
-    margin-bottom: 30px;
   }
   .counter-number{
   }

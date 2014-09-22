@@ -478,7 +478,8 @@ function new_fb_login_url() {
 
 function new_fb_redirect() {
 
-  $redirect = site_url('#thank_you');
+  $site_url = site_url();
+  $redirect = "https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=".$site_url."&redirect_uri=".$site_url;
 
   header('LOCATION: ' . $redirect);
   exit;
