@@ -46,4 +46,21 @@ if ( !function_exists('wp_new_user_notification') ) {
 	function wp_new_user_notification( ) {}
 }
 
+// add_action('get_footer', 'check_post_value');
+add_action('wp', 'check_post_value', 3);
+function check_post_value() {
+	// dd($_GET);
+	if($_GET['dettol_vote']){
+		$value = get_field("jumlah_dukungan");
+		update_field('jumlah_dukungan', $value + 1);
+		// dd($value);
+		$redirect = home_url().'/#thanks';
+		// dd($redirect);
+  		wp_redirect($redirect, 301);
+  		die;
+		//update_field('jumlah_dukungan', $value + 1);
+	}
+
+}
+
 ?>
