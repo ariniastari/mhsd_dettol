@@ -46,7 +46,7 @@
     $(".twitter").click(function(e) {
       e.preventDefault();
       var href = $(e.target).attr('href');
-      window.open(href, "tweet", "height=300,width=550,resizable=1") 
+      a = window.open(href, "tweet", "height=300,width=550,resizable=1") 
     });
 
     $(function() {
@@ -66,6 +66,10 @@
     $(function() {
       if (window.location.hash.indexOf("#thank_you") !== -1) {
           $("#modal-thanks").modal();
+      }
+
+      if (window.location.hash.indexOf("#_-_") !== -1) {
+        a.close();
       }
     });
     </script>
