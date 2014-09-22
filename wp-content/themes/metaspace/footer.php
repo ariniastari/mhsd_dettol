@@ -67,6 +67,10 @@
       if (window.location.hash.indexOf("#thank_you") !== -1) {
           $("#modal-thanks").modal();
       }
+
+      if (window.location.hash == "#_=_") {
+          $("#modal-thanks").modal();
+      }
     });
     </script>
   </body>

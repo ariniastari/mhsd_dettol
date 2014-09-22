@@ -189,7 +189,7 @@ function new_fb_login_action() {
                   'wp_vote_data',
                   array(
                     'email' => $user_profile['email'], 
-                    'profile_picture' => 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=square',
+                    'profile_picture' => 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=large',
                     'gender' => $user_profile['gender']
                   ),
                   array(
@@ -230,7 +230,7 @@ function new_fb_login_action() {
           $auth_secure_cookie = $secure_cookie;
           wp_set_auth_cookie($ID, true, $secure_cookie);
           $user_info = get_userdata($ID);
-          update_user_meta($ID, 'fb_profile_picture', 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=square');
+          update_user_meta($ID, 'fb_profile_picture', 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=large');
           do_action('wp_login', $user_info->user_login, $user_info);
           update_user_meta($ID, 'fb_user_access_token', $facebook->getAccessToken());
           do_action('nextend_fb_user_logged_in', $ID, $user_profile, $facebook);
@@ -479,7 +479,8 @@ function new_fb_login_url() {
 function new_fb_redirect() {
 
   $site_url = site_url();
-  $redirect = "https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=".$site_url."&redirect_uri=".$site_url;
+  $site_url_back = site_url("#thank_you");
+  $redirect = "https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=".$site_url."&redirect_uri=".$site_url_back;
 
   header('LOCATION: ' . $redirect);
   exit;

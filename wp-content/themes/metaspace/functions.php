@@ -31,6 +31,8 @@ function add_my_post_types_to_query( $query ) {
 function query_vote_split_to_array(){
 	global $wpdb;
 	$vote_count = $wpdb->get_var( "SELECT COUNT(*) FROM wp_vote_data" );
+	$vote_manual = (int) get_field('jumlah_dukungan');
+	$vote_count += $vote_manual;
 	$number_formatted = sprintf("%07d", $vote_count);
 	$array = str_split(strval($number_formatted));
 	return $array;
@@ -53,8 +55,8 @@ function check_post_value() {
 	if($_GET['dettol_vote']){
 		$value = get_field("jumlah_dukungan");
 		update_field('jumlah_dukungan', $value + 1);
-		dd($value);
-		$redirect = home_url().'/#thanks';
+		// dd($value);
+		$redirect = home_url().'/#thank_you';
 		// dd($redirect);
   		wp_redirect($redirect, 301);
   		die;
@@ -62,5 +64,12 @@ function check_post_value() {
 	}
 
 }
+
+add_filter('get_avatar','change_avatar_css');
+
+function change_avatar_css($class) {
+	$class = str_replace("class='avatar", "class='img-glow", $class) ;
+	return $class;
+}	
 
 ?>
