@@ -207,8 +207,7 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari galeri Misi Hidup Sehat Dettol. </p>
                       <div class="clearfix">
-                        <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
+                        <a class="twitter" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">as
                         </a>
                         <a href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di" target="_blank">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
