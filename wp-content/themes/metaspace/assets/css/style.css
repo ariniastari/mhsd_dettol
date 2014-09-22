@@ -363,7 +363,7 @@ code {
             background-position: 0 -35px;
           }
 
-          div.btn-share-tw{
+          a.btn-share-tw{
             background: url(../img/share-tw.png);
             width: 171px;
             height: 35px;
@@ -375,7 +375,7 @@ code {
                     transition: 0.3s;
           }
 
-          div.btn-share-tw:hover{
+          a.btn-share-tw:hover{
             background-position: 0 -35px;
           }
 
