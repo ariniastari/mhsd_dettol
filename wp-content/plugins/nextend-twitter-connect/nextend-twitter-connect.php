@@ -246,6 +246,19 @@ function new_twitter_login_action() {
             '%s',
             '%s'
           ));
+          $wpdb->insert(
+            'wp_vote_data',
+            array(
+              'email' => $email, 
+              'profile_picture' => $resp->profile_image_url,
+              'gender' => 'N/A'
+            ),
+            array(
+              '%s',
+              '%s',
+              '%s'
+            ) 
+          );
           do_action('nextend_twitter_user_account_linked', $ID, $resp, $tmhOAuth);
           $user_info = wp_get_current_user();
           set_site_transient($user_info->ID.'_new_twitter_admin_notice', __('Your Twitter profile is successfully linked with your account. Now you can sign in with Twitter easily.', 'nextend-twitter-connect'), 3600);
