@@ -645,7 +645,7 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-butuh{
-    background: url(../img/bg-modal.jpg);
+    background: url(../img/popup.jpg);
     width: 995px;
     height: 317px;
     -webkit-border-radius: 0;
@@ -782,7 +782,7 @@ have a fixed width and height (but it's not required).
 }
 #modal-wallofpic .modal-content,
 #modal-thanks .modal-content, #modal-vote .modal-content{
-  background: url(../img/bg-wallofpic.jpg);
+  background: url(../img/thanks.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;
