@@ -1,4 +1,4 @@
-<?php get_header(); //dd(searchTweets(3, '#misihidupsehat'));?>
+<?php get_header(); //dd(get_field('jumlah_dukungan'));?>
 
   <body>
     <div id="fb-root"></div>
