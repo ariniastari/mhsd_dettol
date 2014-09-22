@@ -220,10 +220,10 @@
                       <p>Klik share dan jadilah bagian dari galeri Misi Hidup Sehat Dettol. </p>
                       <div class="clearfix">
                         <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
+                          <div class="btn-share-fb"></div>
                         </a>
                         <a href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
-                          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
+                          <div class="btn-share-tw"></div>
                         </a>
                       </div>
                       <h5>

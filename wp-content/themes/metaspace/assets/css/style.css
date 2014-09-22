@@ -347,6 +347,38 @@ code {
           margin: 40px auto 60px auto;
         }
 
+          div.btn-share-fb{
+            background: url(../img/share-fb.png);
+            width: 181px;
+            height: 35px;
+            margin: auto;
+            -webkit-transition: 0.3s;
+               -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                 -o-transition: 0.3s;
+                    transition: 0.3s;
+          }
+
+          div.btn-share-fb:hover{
+            background-position: 0 -35px;
+          }
+
+          div.btn-share-tw{
+            background: url(../img/share-tw.png);
+            width: 171px;
+            height: 35px;
+            margin: auto;
+            -webkit-transition: 0.3s;
+               -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                 -o-transition: 0.3s;
+                    transition: 0.3s;
+          }
+
+          div.btn-share-tw:hover{
+            background-position: 0 -35px;
+          }
+
           .counter-number{
             float: left;
             background: rgba(255,255,255,0.8);
@@ -829,7 +861,7 @@ have a fixed width and height (but it's not required).
     }
 
     #modal-thanks .modal-body .col-md-6:last-child a{
-      margin-right: 20px;
+      margin-left: 8%;
       margin-top: 20px;
       display: block;
       float: left;
