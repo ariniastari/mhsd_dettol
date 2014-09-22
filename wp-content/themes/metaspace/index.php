@@ -125,8 +125,9 @@
                     <!-- NEW -->
                     <!-- ADD HAND MASK -->
                     <div class="col-md-6 hidden-xs col-sm-8">
-
+                      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/s720x720/1920250_10203088855963060_2092830741_n.jpg?oh=d35fd9d520fcfc6ed340bc797596cf7e&oe=54C7D350&__gda__=1418979303_be000b3aa37f46c101d1eabd86360656" alt="" class="img-glow">
                       <div class="hand-mask">
+
                         <div class="pic-collage">
                           <?php
                             foreach (get_images_facebook() as $value) { ?>
@@ -182,7 +183,7 @@
                     <!-- NEW -->
                     <!-- ADD HAND MASK -->
                     <div class="col-md-6 hidden-xs col-sm-8">
-
+                      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/s720x720/1920250_10203088855963060_2092830741_n.jpg?oh=d35fd9d520fcfc6ed340bc797596cf7e&oe=54C7D350&__gda__=1418979303_be000b3aa37f46c101d1eabd86360656" alt="" class="img-glow">
                       <div class="hand-mask">
                         <div class="pic-collage">
                           <?php

@@ -1248,7 +1248,21 @@ have a fixed width and height (but it's not required).
 }
 
 /* NEW STYLE FOR HAND MASK*/
-
+#modal-wallofpic .col-md-6,
+#modal-thanks .col-md-6{
+  position: relative;
+}
+#modal-wallofpic .img-glow,
+#modal-thanks .img-glow{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  -webkit-box-shadow: 0px 0px 10px 4px #7dff00;
+          box-shadow: 0px 0px 10px 4px #7dff00;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
 .hand-mask{
   position: relative;
   overflow: hidden;
