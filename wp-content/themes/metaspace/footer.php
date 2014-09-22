@@ -68,8 +68,8 @@
           $("#modal-thanks").modal();
       }
 
-      if (window.location.hash == "#_-_") {
-        window.close();
+      if (window.location.hash == "#_=_") {
+          $("#modal-thanks").modal();
       }
     });
     </script>
