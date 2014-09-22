@@ -68,7 +68,7 @@
           $("#modal-thanks").modal();
       }
 
-      if (window.location.hash.indexOf("#_-_") !== -1) {
+      if (window.location.hash == "#_-_") {
         window.close();
       }
     });
