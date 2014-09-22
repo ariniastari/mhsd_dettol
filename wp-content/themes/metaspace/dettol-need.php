@@ -19,10 +19,12 @@
               if ($counter % 2 != 0){ ?>
               <li>
                 <img src="<?php echo $value['second_gallery_image']; ?>" alt="" class="img-responsive" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
+                <div class="school-name">SDN 01 Jakarta</div>
               <?php 
               }
               else { ?>
                 <img src="<?php echo $value['second_gallery_image']; ?>" alt="" class="img-responsive" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
+                <div class="school-name">SDN 01 Jakarta</div>
               </li>
               <?php
               }
