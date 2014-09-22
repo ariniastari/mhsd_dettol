@@ -547,6 +547,7 @@ have a fixed width and height (but it's not required).
     float: left;
     width: 320px;
     cursor: pointer;
+    position: relative;
 }
 
 .jcarousel li img:hover{
@@ -558,6 +559,29 @@ have a fixed width and height (but it's not required).
           transition: 0.5s;
 }
 
+.jcarousel li img:hover + .school-name{
+  display: block;
+}
+
+.jcarousel li img:nth-child(3):hover + .school-name{
+  display: block;
+  top: 70%;
+}
+
+.jcarousel li .school-name{
+  display: none;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+  font-size: 28px;
+}
+
+@media(max-width: 450px){
+  .jcarousel li .school-name{
+    font-size: 20px;
+  }
+}
 .jcarousel-pagination{
   position: absolute;
   bottom: 10px;
