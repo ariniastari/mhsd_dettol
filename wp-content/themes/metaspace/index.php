@@ -222,7 +222,7 @@
                         <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
                         </a>
-                        <a href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">" target="_blank">
+                        <a href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
                         </a>
                       </div>
