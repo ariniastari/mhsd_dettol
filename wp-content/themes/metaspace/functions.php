@@ -54,7 +54,7 @@ function check_post_value() {
 		$value = get_field("jumlah_dukungan");
 		update_field('jumlah_dukungan', $value + 1);
 		// dd($value);
-		$redirect = home_url().'/#thanks';
+		$redirect = home_url().'/#thank_you';
 		// dd($redirect);
   		wp_redirect($redirect, 301);
   		die;
