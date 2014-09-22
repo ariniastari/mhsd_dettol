@@ -55,7 +55,7 @@ function check_post_value() {
 	if($_GET['dettol_vote']){
 		$value = get_field("jumlah_dukungan");
 		update_field('jumlah_dukungan', $value + 1);
-		dd($value);
+		// dd($value);
 		$redirect = home_url().'/#thank_you';
 		redirect_to($redirect);
 		//dd($redirect);
@@ -63,9 +63,8 @@ function check_post_value() {
 	}
 
 }
-
 function redirect_to($redirect){
-	wp_redirect($redirect, 301);
+	wp_redirect($redirect, 302);
   die;
 }
 
