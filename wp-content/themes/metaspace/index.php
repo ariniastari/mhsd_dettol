@@ -171,7 +171,7 @@
                 <div class="fb-white">
                 </div>
               </a>
-              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di">
+              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Saya%20mendukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -200,7 +200,8 @@
                     <!-- END NEW -->
                     <div class="col-md-6 col-xs-12 col-sm-4">
                       <h3>
-                        terima kasih atas kepedulian anda
+                        terima kasih <br/>
+                        <span style="font-size: 20px;">atas kepedulian anda</span>
                       </h3>
                       <p>
                         Ayo sebarkan Misi Hidup Sehat Dettol agar lebih banyak orang yang tergerak untuk membuat perubahan bagi mereka yang membutuhkan.
@@ -210,7 +211,7 @@
                         <a href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-fb.jpg" alt="">
                         </a>
-                        <a href="https://twitter.com/share?text=Saya%20dukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di" target="_blank">
+                        <a href="https://twitter.com/share?text=Saya%20mendukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di" target="_blank">
                           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/share-tw.jpg" alt="">
                         </a>
                       </div>
