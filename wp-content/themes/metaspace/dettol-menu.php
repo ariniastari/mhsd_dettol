@@ -17,7 +17,7 @@
       <li><a href="#second">mereka yang membutuhkan</a></li>
       <li><a href="#third">Dukungan yang diterima</a></li>
       <li><a class="wider" href="" data-toggle="modal" data-target="#modal-wallofpic">GALERI DUKUNGAN ANDA</a></li>
-      <li class="active"><a href="" data-toggle="modal" data-target="#modal-vote">ULURKAN <br/>TANGAN</a></li>
+      <li class="active"><a href="<?php echo site_url(); ?>/?dettol_vote=true">ULURKAN <br/>TANGAN</a></li>
     </ul>
   </div><!--/.nav-collapse -->
   <!-- ADD HIDDEN SM -->
