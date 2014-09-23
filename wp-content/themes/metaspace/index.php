@@ -175,10 +175,12 @@
                           }
                         }
                         ?>
+                        <div class="clearfix"></div>
                       </div>
-                      <div class="clearfix"></div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
+                      <div class="text-center">
+                        <a href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.modal-content -->

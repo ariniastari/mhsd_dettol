@@ -1359,14 +1359,14 @@ have a fixed width and height (but it's not required).
 }
   .pic-collage-mobile {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
     .pic-collage-mobile img {
       float: left;
       width: 50px;
       height: 50px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
     }
 
   .pic-collage{
