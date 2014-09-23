@@ -352,11 +352,6 @@ code {
             width: 181px;
             height: 35px;
             margin: auto;
-            -webkit-transition: 0.3s;
-               -moz-transition: 0.3s;
-                -ms-transition: 0.3s;
-                 -o-transition: 0.3s;
-                    transition: 0.3s;
           }
 
           a.btn-share-fb:hover{
@@ -368,11 +363,6 @@ code {
             width: 171px;
             height: 35px;
             margin: auto;
-            -webkit-transition: 0.3s;
-               -moz-transition: 0.3s;
-                -ms-transition: 0.3s;
-                 -o-transition: 0.3s;
-                    transition: 0.3s;
           }
 
           a.btn-share-tw:hover{
@@ -810,7 +800,7 @@ have a fixed width and height (but it's not required).
 
     #modal-wallofpic .modal-body .col-md-6:last-child h3,
     #modal-thanks .modal-body .col-md-6:last-child h3{
-      color: #DAF902;
+      color: #fff600;
       font-family: 'OpenSans Bold', Arial, sans-serif;
       font-size: 24px;
       text-transform: uppercase;
