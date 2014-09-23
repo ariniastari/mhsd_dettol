@@ -181,7 +181,7 @@ code {
   }
 
     .btn-dukung{
-      margin: -75px 20px 0 0;
+      margin: -90px 20px 0 0;
       position: fixed;
       z-index: 100;
       cursor: pointer;
@@ -339,13 +339,35 @@ code {
         .third .hands-bg p{
           font-size: 16px;
           font-family: 'NotoSans', Arial, sans-serif;
-          line-height: 30px;
+          line-height: 23px;
           text-align: center;
         }
 
         .third .hands-bg .counter{
           margin: 40px auto 60px auto;
         }
+
+          a.btn-share-fb{
+            background: url(../img/share-fb.png);
+            width: 181px;
+            height: 35px;
+            margin: auto;
+          }
+
+          a.btn-share-fb:hover{
+            background-position: 0 -35px;
+          }
+
+          a.btn-share-tw{
+            background: url(../img/share-tw.png);
+            width: 171px;
+            height: 35px;
+            margin: auto;
+          }
+
+          a.btn-share-tw:hover{
+            background-position: 0 -35px;
+          }
 
           .counter-number{
             float: left;
@@ -574,7 +596,10 @@ have a fixed width and height (but it's not required).
   text-align: center;
   width: 100%;
   top: 20%;
-  font-size: 28px;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+  font-family: 'OpenSans Bold', Arial, sans-serif;
 }
 
 @media(max-width: 450px){
@@ -609,26 +634,30 @@ have a fixed width and height (but it's not required).
 
   .modal-dialog{
     width: 995px;
-    margin: 100px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 
   .modal-butuh{
-    background: url(../img/bg-modal.jpg);
+    background: url(../img/popup.jpg);
     width: 995px;
-    height: 317px;
     -webkit-border-radius: 0;
             border-radius: 0;
     position: relative;
     margin: auto;
+    height: 100%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 
     .modal-body{
       height: 100%;
-      padding: 30px 0 30px 0;
+      padding: 30px 0 55px 0;
     }
 
       .modal-butuh .modal-body > .col-md-6:first-child{
         padding-right: 0;
+        margin-top: 25px;
       }
 
       .modal-butuh .modal-body > .col-md-6:first-child > .col-md-6:last-child > img{
@@ -647,8 +676,8 @@ have a fixed width and height (but it's not required).
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > p{
-        color: #585858;
-        font-family: 'OpenSans Light', Arial, sans-serif;
+        color: #000;
+        font-family: 'OpenSans Semibold', Arial, sans-serif;
         font-size: 16px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -685,8 +714,8 @@ have a fixed width and height (but it's not required).
   }
 
   #modal-dukung p{
-    color: #585858;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    color: #000;
+    font-family: 'OpenSans Semibold', Arial, sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -750,7 +779,7 @@ have a fixed width and height (but it's not required).
 }
 #modal-wallofpic .modal-content,
 #modal-thanks .modal-content, #modal-vote .modal-content{
-  background: url(../img/bg-wallofpic.jpg);
+  background: url(../img/thanks.jpg);
   width: 1056px;
   height: 616px;
   text-align: left;
@@ -775,7 +804,7 @@ have a fixed width and height (but it's not required).
 
     #modal-wallofpic .modal-body .col-md-6:last-child h3,
     #modal-thanks .modal-body .col-md-6:last-child h3{
-      color: #DAF902;
+      color: #fff600;
       font-family: 'OpenSans Bold', Arial, sans-serif;
       font-size: 24px;
       text-transform: uppercase;
@@ -789,6 +818,8 @@ have a fixed width and height (but it's not required).
 
     #modal-thanks .modal-body .col-md-6:last-child h3{
       margin-top: 100px;
+      font-size: 55px;
+      line-height: 36px;
     }
 
 
@@ -827,9 +858,14 @@ have a fixed width and height (but it's not required).
       font-size: 16px;
       margin-top: 50px;
     }
+    #modal-thanks .modal-body .col-md-6:last-child h5 span{
+      color: #FFF;
+      font-family: 'OpenSans Light', Arial, sans-serif;
+      line-height: 24px;
+    }
 
     #modal-thanks .modal-body .col-md-6:last-child a{
-      margin-right: 20px;
+      margin-left: 8%;
       margin-top: 20px;
       display: block;
       float: left;
@@ -1185,11 +1221,6 @@ have a fixed width and height (but it's not required).
           padding: 20px;
         }
 
-        #modal-wallofpic .modal-body .col-md-6:last-child .counter-num-modal{
-          padding: 10px 3%;
-          margin-right: 10px;
-        }
-
         #modal-wallofpic .modal-body .col-md-6:last-child .counter-modal{
           width: 60%;
           margin: auto;
@@ -1392,6 +1423,13 @@ have a fixed width and height (but it's not required).
   #modal-wallofpic .modal-content,
   #modal-thanks .modal-content{
     width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 360px){
+  #modal-wallofpic .modal-body .col-md-6:last-child .counter-num-modal{
+    padding: 10px 1%;
+    margin-right: 7px;
   }
 }
 
