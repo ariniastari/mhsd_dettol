@@ -810,11 +810,13 @@ have a fixed width and height (but it's not required).
 #modal-wallofpic .modal-content {
   background: #3C9B21;
   opacity: 0.9;
+  height: auto;
 }
 
 @media(min-width: 768px) {
   #modal-wallofpic .modal-content {
     background: url(../img/thanks.jpg);
+    height: 616px;
   }
 }
 #modal-vote .modal-content {
