@@ -640,20 +640,24 @@ have a fixed width and height (but it's not required).
   .modal-butuh{
     background: url(../img/popup.jpg);
     width: 995px;
-    height: 317px;
     -webkit-border-radius: 0;
             border-radius: 0;
     position: relative;
     margin: auto;
+    height: 100%;
+    -webkit-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
   }
 
     .modal-body{
       height: 100%;
-      padding: 30px 0 30px 0;
+      padding: 30px 0 55px 0;
     }
 
       .modal-butuh .modal-body > .col-md-6:first-child{
         padding-right: 0;
+        margin-top: 25px;
       }
 
       .modal-butuh .modal-body > .col-md-6:first-child > .col-md-6:last-child > img{
@@ -710,8 +714,8 @@ have a fixed width and height (but it's not required).
   }
 
   #modal-dukung p{
-    color: #585858;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    color: #000;
+    font-family: 'OpenSans Semibold', Arial, sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
@@ -814,7 +818,8 @@ have a fixed width and height (but it's not required).
 
     #modal-thanks .modal-body .col-md-6:last-child h3{
       margin-top: 100px;
-      font-size: 40px;
+      font-size: 55px;
+      line-height: 36px;
     }
 
 
@@ -852,6 +857,11 @@ have a fixed width and height (but it's not required).
       font-family: 'OpenSans Bold', Arial, sans-serif;
       font-size: 16px;
       margin-top: 50px;
+    }
+    #modal-thanks .modal-body .col-md-6:last-child h5 span{
+      color: #FFF;
+      font-family: 'OpenSans Light', Arial, sans-serif;
+      line-height: 24px;
     }
 
     #modal-thanks .modal-body .col-md-6:last-child a{

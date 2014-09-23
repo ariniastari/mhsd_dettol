@@ -51,7 +51,7 @@
               </div>
             </div>
             <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
-              <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Dukungan yang Sudah Diterima</div>
+              <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
               <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
             <div class="modal fade" id="modal-dukung">
@@ -59,7 +59,7 @@
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <div class="modal-body clearfix">
-                    <h3>Dukungan yang Diterima</h3>
+                    <h3>Sekolah yang Telah Mendukung</h3>
                     <p>Ratusan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
                       <div class="cycle-slideshow school-pagination clearfix" data-cycle-slides=".page" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".pager">
                         <?php
@@ -177,7 +177,7 @@
                 <div class="fb-white">
                 </div>
               </a>
-              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Saya%20mendukung%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20yang%20terlindungi.%20Ayo%20ikut%20nyatakan%20dukunganmu%20di">
+              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+tetap+hidup">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -225,7 +225,8 @@
                         </a>
                       </div>
                       <h5>
-                        Bergabunglah bersama Keluarga Dettol Indonesia. <br/>Dapatkan berbagai inspirasi untuk melindungi keluarga Anda.
+                        Bergabunglah bersama Keluarga Dettol Indonesia. <br/>
+                        <span>Dapatkan berbagai inspirasi untuk melindungi keluarga Anda.</span>
 
                       </h5>
                       <div class="fb-like" data-href="https://www.facebook.com/DettolIndonesia" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>

@@ -9,7 +9,10 @@
     <meta property="og:title" content="Misi Hidup Sehat Dettol" />
     <meta property="og:site" content="www.misihidupsehatdettol.com
 " />
-    <meta property="og:description" content="Bergabunglah dengan Misi Hidup Sehat Dettol! Risiko kematian akibat diare dan ISPA bagi anak sangat tinggi di daerah dengan fasilitas cuci tangan yang buruk. Misi Hidup Sehat Dettol membangun ratusan fasilitas cuci tangan yang layak. Bergabunglah hanya dengan 1 Like/ Share untuk 1 Anak yang Membutuhkan." />
+    <meta property="og:description" content="Bergabunglah dengan Misi Hidup Sehat Dettol!
+Risiko kematian akibat diare dan ISPA bagi anak sangat tinggi di daerah dengan fasilitas cuci tangan yang buruk.
+Misi Hidup Sehat Dettol membangun ratusan fasilitas cuci tangan yang layak.
+Bergabunglah hanya dengan 1 Like/ Share untuk 1 Anak yang Membutuhkan." />
     <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/logo-for-fb.jpg" />
 
     <!-- CSS -->
