@@ -606,9 +606,10 @@ have a fixed width and height (but it's not required).
   text-align: center;
   width: 100%;
   top: 20%;
-  font-size: 28px;
+  font-size: 24px;
+  text-transform: uppercase;
   color: #000;
-font-family: 'OpenSans Bold', Arial, sans-serif;
+  font-family: 'OpenSans Bold', Arial, sans-serif;
 }
 
 @media(max-width: 450px){
