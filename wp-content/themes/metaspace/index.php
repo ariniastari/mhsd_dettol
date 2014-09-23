@@ -166,10 +166,14 @@
                       </div>
                       <div class="visible-xs pic-collage-mobile">
                         <?php
+                        $i = 1;
+                        if ($i <= 100) {
                           foreach (get_images_facebook() as $value) { ?>
                             <img src="<?php echo $value->profile_picture ?>" alt="" class="img-responsive">
                          <?php 
+                            $i++;
                           }
+                        }
                         ?>
                       </div>
                       <div class="clearfix"></div>
