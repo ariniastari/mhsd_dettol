@@ -15,7 +15,7 @@
             <a href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
           </div>
           <p>
-            Untuk informasi lebih lanjut: <a href="www.dettol.co.id" target="_blank">www.dettol.co.id</a>
+            Untuk informasi lebih lanjut: <a href="http://dettol.co.id" target="_blank">www.dettol.co.id</a>
           </p>
           
         </div>
