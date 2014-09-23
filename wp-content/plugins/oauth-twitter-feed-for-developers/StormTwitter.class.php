@@ -136,6 +136,7 @@ class StormTwitter {
 
   function searchTweets($count = 4, $hashtags = false){
     $result = $this->oauthSearchTweets($hashtags, $count);
+    //d($result);
     return $result;
   }
 
@@ -147,6 +148,12 @@ class StormTwitter {
 
     $options = array();
     $options = array_merge($options, array('q' => $hashtag, 'count' => $count));
+
+    if (empty($key)) return array('error'=>'Missing Consumer Key - Check Settings');
+    if (empty($secret)) return array('error'=>'Missing Consumer Secret - Check Settings');
+    if (empty($token)) return array('error'=>'Missing Access Token - Check Settings');
+    if (empty($token_secret)) return array('error'=>'Missing Access Token Secret - Check Settings');
+    // if (empty($screenname)) return array('error'=>'Missing Twitter Feed Screen Name - Check Settings');
 
     $connection = new TwitterOAuth($key, $secret, $token, $token_secret);
     $result = $connection->get('search/tweets', $options);

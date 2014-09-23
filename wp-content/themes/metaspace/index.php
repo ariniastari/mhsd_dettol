@@ -261,8 +261,9 @@
           Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
         </div>
         <?php
-          $tweets = searchTweets(3, '#misihidupsehat');
-            if ($tweets){
+          $tweets = searchTweets(4, '#misihidupsehat');
+          //dd($tweets);
+            if (!$tweets['error']){
               foreach ($tweets['statuses'] as $value) { ?>
               <div class="col-md-3 col-sm-3 col-xs-6">
                 <?php echo $value['text']; ?>    
