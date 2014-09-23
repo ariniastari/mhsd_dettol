@@ -26,9 +26,11 @@ function searchTweets($count = 4, $hashtag = false){
   
   $obj = new StormTwitter($config);
   $res = $obj->searchTweets($count, $hashtag);
+  //d($res);
   update_option('tdf_last_error',$obj->st_last_error);
   return $res;
 }
+
 function getTweets($username = false, $count = 20, $options = false) {
 
   $config['key'] = get_option('tdf_consumer_key');
