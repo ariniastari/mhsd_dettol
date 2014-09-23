@@ -164,6 +164,15 @@
                           }
                         ?>
                       </div>
+                      <div class="visible-xs pic-collage-mobile">
+                        <?php
+                          foreach (get_images_facebook() as $value) { ?>
+                            <img src="<?php echo $value->profile_picture ?>" alt="" class="img-responsive">
+                         <?php 
+                          }
+                        ?>
+                      </div>
+                      <div class="clearfix"></div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
                     </div>

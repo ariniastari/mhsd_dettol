@@ -807,6 +807,16 @@ have a fixed width and height (but it's not required).
   margin: auto;
 }
 
+#modal-wallofpic .modal-content {
+  background: #3C9B21;
+  opacity: 0.9;
+}
+
+@media(min-width: 768px) {
+  #modal-wallofpic .modal-content {
+    background: url(../img/thanks.jpg);
+  }
+}
 #modal-vote .modal-content {
   height: auto;
   width: 320px;
@@ -1345,6 +1355,16 @@ have a fixed width and height (but it's not required).
   height: 614px;
   width: 523px;
 }
+  .pic-collage-mobile {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+    .pic-collage-mobile img {
+      float: left;
+      width: 15%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
 
   .pic-collage{
     position: absolute;
