@@ -181,7 +181,7 @@ code {
   }
 
     .btn-dukung{
-      margin: -75px 20px 0 0;
+      margin: -90px 20px 0 0;
       position: fixed;
       z-index: 100;
       cursor: pointer;
@@ -1221,11 +1221,6 @@ have a fixed width and height (but it's not required).
           padding: 20px;
         }
 
-        #modal-wallofpic .modal-body .col-md-6:last-child .counter-num-modal{
-          padding: 10px 3%;
-          margin-right: 10px;
-        }
-
         #modal-wallofpic .modal-body .col-md-6:last-child .counter-modal{
           width: 60%;
           margin: auto;
@@ -1428,6 +1423,13 @@ have a fixed width and height (but it's not required).
   #modal-wallofpic .modal-content,
   #modal-thanks .modal-content{
     width: 100%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 360px){
+  #modal-wallofpic .modal-body .col-md-6:last-child .counter-num-modal{
+    padding: 10px 1%;
+    margin-right: 7px;
   }
 }
 
