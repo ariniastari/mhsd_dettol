@@ -164,17 +164,19 @@
                           }
                         ?>
                       </div>
-                      <div class="visible-xs pic-collage-mobile">
+                      <div class="visible-xs pic-collage-mobile clearfix">
+                        <div class="text-center">
                         <?php
                         $i = 1;
                         if ($i <= 100) {
                           foreach (get_images_facebook() as $value) { ?>
-                            <img src="<?php echo $value->profile_picture ?>" alt="" class="img-responsive">
+                            <img src="<?php echo $value->profile_picture ?>" alt="">
                          <?php 
                             $i++;
                           }
                         }
                         ?>
+                        </div>
                         <div class="clearfix"></div>
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
