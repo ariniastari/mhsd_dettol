@@ -48,6 +48,27 @@ code {
             box-shadow: 1px 0px 2px 0px #BCBCBC;
     font-family: 'NotoSans Bold', Arial, sans-serif;
   }
+
+  @media (max-width: 450px){
+    .navbar-default{
+      height: 80px;
+    }
+    .logo-bg{
+      margin-top: -37px !important;
+    }
+    .logo-bg .navbar-brand img{
+      margin-top: 15px !important;
+    }
+    .navbar-default .navbar-toggle{
+      margin-top: 20px !important;
+    }
+    .first{
+      margin-top: 80px !important;
+    }
+    #modal-thanks .modal-body .col-md-6:last-child h3{
+      line-height: 55px !important;
+    }
+  }
     
     .navbar-nav{
       margin-top: 25px;

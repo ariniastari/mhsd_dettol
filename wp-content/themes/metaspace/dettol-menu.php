@@ -25,10 +25,10 @@
     <a href="http://www.dettol.co.id" target="_blank">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-right.png" alt="" class="img-responsive">
     </a>
-    <a href="https://www.facebook.com/DettolIndonesia" class="hidden-sm hidden-md">
+    <a href="https://www.facebook.com/DettolIndonesia" class="hidden-sm hidden-md" target="_blank">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fb-header.png" alt="" class="img-responsive">
     </a>
-    <a href="https://twitter.com/Dettol_ID" class="hidden-sm hidden-md">
+    <a href="https://twitter.com/Dettol_ID" class="hidden-sm hidden-md" target="_blank">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitter-header.png" alt="" class="img-responsive">
     </a>
   </div>
