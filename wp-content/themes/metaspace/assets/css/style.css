@@ -914,6 +914,10 @@ have a fixed width and height (but it's not required).
     }
 
 @media (max-width: 992px){
+  #modal-thanks .modal-body .col-md-6:last-child a{
+    margin-left: 20%;
+  }
+
   .first > .col-md-6 p{
     font-size: 17px !important;
     margin-top: 30px !important;
