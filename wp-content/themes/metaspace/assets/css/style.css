@@ -930,8 +930,8 @@ have a fixed width and height (but it's not required).
     margin-top: 25px;
   }
   #modal-wallofpic .modal-body .col-md-6:last-child .counter-num-modal{
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     margin-right: 5px;
   }
   #modal-wallofpic .modal-body .col-md-6:last-child .counter-modal{
@@ -1255,7 +1255,7 @@ have a fixed width and height (but it's not required).
         }
 
         #modal-wallofpic .modal-body .col-md-6:last-child .counter-modal{
-          width: 60%;
+          width: 70%;
           margin: auto;
         }
 
