@@ -37,6 +37,12 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dettol.js"></script>
     <script>
 
+    $('.navbar-collapse a').click(function (e) {
+      if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
+        $('.navbar-collapse').collapse('toggle');
+      }
+    });
+
     function fbShare(url, title, descr, image, winWidth, winHeight) {
         var winTop = (screen.height / 2) - (winHeight / 2);
         var winLeft = (screen.width / 2) - (winWidth / 2);
