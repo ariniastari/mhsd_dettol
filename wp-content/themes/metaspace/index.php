@@ -190,7 +190,8 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a class="fb-white" href="<?php echo site_url(); ?>/?dettol_vote=true">
+              <a href="<?php echo site_url(); ?>/?dettol_vote=true">
+                <div class="fb-white"></div>
               </a>
               <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+tetap+hidup">
               </a>
