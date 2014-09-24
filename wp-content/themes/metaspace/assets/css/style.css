@@ -1185,14 +1185,13 @@ have a fixed width and height (but it's not required).
     }
 
       .second .left-cont p{
-        font-size: 16px;
+        font-size: 14px;
         
       }
 
       .second .left-cont h3
       {
         font-size: 28px;
-        margin-top: 100px;
       }
 
       .separator{
