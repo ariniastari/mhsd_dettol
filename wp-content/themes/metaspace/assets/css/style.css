@@ -593,7 +593,7 @@ have a fixed width and height (but it's not required).
     position: relative;
 }
 
-.jcarousel li img:hover{
+/*.jcarousel li img:hover{
   opacity: 0.5;
   -webkit-transition: 0.5s;
      -moz-transition: 0.5s;
@@ -610,6 +610,8 @@ have a fixed width and height (but it's not required).
   display: block;
   top: 70%;
 }
+*/
+
 
 .jcarousel li .school-name{
   display: none;
