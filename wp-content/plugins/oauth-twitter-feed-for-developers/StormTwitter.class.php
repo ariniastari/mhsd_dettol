@@ -136,7 +136,7 @@ class StormTwitter {
 
   function searchTweets($count = 4, $hashtags = false){
     $result = $this->oauthSearchTweets($hashtags, $count);
-    d($result);
+    //d($result);
     return $result;
   }
 
@@ -164,7 +164,7 @@ class StormTwitter {
       $cache = json_decode(file_get_contents($this->getCacheLocation()),true);
     }
 
-    d($cache);
+    // d($cache);
     
     if (!isset($result['errors']) && isset($result)) {
       $cache[$cachename]['time'] = time();
