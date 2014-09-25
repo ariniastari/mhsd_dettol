@@ -513,6 +513,12 @@ code {
       font-family: 'NotoSans', Arial, sans-serif;
     }
 
+    @media(max-width: 768px) {
+      .forth.row{
+        font-size: 12px;
+      }
+    }
+
       .forth.row .col-md-3:first-child{
         color: #61823E;
         padding: 2%;
@@ -1302,7 +1308,7 @@ have a fixed width and height (but it's not required).
 
         .forth.row .col-md-3:nth-child(2),
         .forth.row .col-md-3:nth-child(3){
-          padding: 20px;
+          /*padding: 20px;*/
         }
 
         #modal-wallofpic .modal-body .col-md-6:last-child .counter-modal{
