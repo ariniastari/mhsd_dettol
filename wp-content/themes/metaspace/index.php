@@ -272,7 +272,7 @@
         </div>
       </div>
       <div class="row forth">
-        <div class="col-md-3 col-sm-3 hidden-xs">
+        <div class="col-md-3 col-sm-3 col-xs-6">
           Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
         </div>
         <?php
