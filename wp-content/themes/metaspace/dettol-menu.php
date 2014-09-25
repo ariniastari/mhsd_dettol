@@ -5,7 +5,9 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    
+    <a href="<?php echo site_url(); ?>/?dettol_vote=true" class='right hidden-sm hidden-md hidden-lg'>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung-mobile.png" alt="" width="80" height="80">
+    </a>
     <div class="logo-bg">
       <a class="navbar-brand" href="#first">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-inner.png" alt="">
