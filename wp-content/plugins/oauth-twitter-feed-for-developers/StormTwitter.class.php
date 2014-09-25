@@ -136,7 +136,7 @@ class StormTwitter {
 
   function searchTweets($count = 4, $hashtags = false){
     $result = $this->oauthSearchTweets($hashtags, $count);
-    d($result);
+    //d($result);
     return $result;
   }
 
@@ -145,6 +145,8 @@ class StormTwitter {
     $secret = $this->defaults['secret'];
     $token = $this->defaults['token'];
     $token_secret = $this->defaults['token_secret'];
+
+    $cachename = $hashtag."-".$this->getOptionsHash($options);
 
     $options = array();
     $options = array_merge($options, array('q' => $hashtag, 'count' => $count));
@@ -162,7 +164,7 @@ class StormTwitter {
       $cache = json_decode(file_get_contents($this->getCacheLocation()),true);
     }
 
-    d($cache);
+    // d($cache);
     
     if (!isset($result['errors']) && isset($result)) {
       $cache[$cachename]['time'] = time();
@@ -170,13 +172,8 @@ class StormTwitter {
       $file = $this->getCacheLocation();
       file_put_contents($file,json_encode($cache));
     } else {
-      if (is_array($results) && isset($result['errors'][0]) && isset($result['errors'][0]['message'])) {
-        $last_error = '['.date('r').'] Twitter error: '.$result['errors'][0]['message'];
-        $this->st_last_error = $last_error;
-      } else {
-        $last_error = '['.date('r').'] Twitter returned an invalid response. It is probably down.';
-        $this->st_last_error = $last_error;
-      }
+      $end_of_cache = end($cache);
+      $result = $end_of_cache['tweets'];
     }
     
     return $result;

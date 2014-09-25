@@ -277,7 +277,7 @@
         </div>
         <?php
           $tweets = searchTweets(4, '#misihidupsehat');
-          d($tweets);
+          //d($tweets);
             if (!$tweets['error'] && $tweets){
               foreach ($tweets['statuses'] as $value) { ?>
               <div class="col-md-3 col-sm-3 col-xs-6">
