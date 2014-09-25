@@ -172,7 +172,8 @@ class StormTwitter {
       $file = $this->getCacheLocation();
       file_put_contents($file,json_encode($cache));
     } else {
-      $result = end($cache)['tweets'];
+      $end_of_cache = end($cache);
+      $result = $end_of_cache['tweets'];
     }
     
     return $result;
