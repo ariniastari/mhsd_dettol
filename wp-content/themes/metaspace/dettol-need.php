@@ -19,13 +19,13 @@
               if ($counter % 2 != 0){ ?>
               <li>
                 <img src="<?php echo $value['second_gallery_image']; ?>" alt="" class="img-responsive" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
-                <div class="school-name" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>"><?php echo $value['second_gallery_title']; ?>sdn 01 jakarta</div>
+                <div class="school-name" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>"><?php echo $value['second_gallery_title']; ?></div>
 
               <?php 
               }
               else { ?>
                 <img src="<?php echo $value['second_gallery_image']; ?>" alt="" class="img-responsive" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
-                <div class="school-name" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>"><?php echo $value['second_gallery_title']; ?>sdn 01 jakarta</div>
+                <div class="school-name" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>"><?php echo $value['second_gallery_title']; ?></div>
               </li>
               <?php
               }
