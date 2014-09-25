@@ -656,6 +656,7 @@ have a fixed width and height (but it's not required).
 @media(max-width: 450px){
   .jcarousel li .school-name{
     font-size: 14px;
+    top: 16%;
   }
 }
 .jcarousel-pagination{
