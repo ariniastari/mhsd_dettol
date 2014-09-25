@@ -455,6 +455,16 @@ code {
             text-decoration: none;
           }
 
+          @media(max-width: 768px){
+            .btn-tosca {
+              margin: auto;
+              display: inline-block;
+              float: none;
+              margin-top: 15px;
+              font-size: 12px;
+            }
+          }
+
         .share-cont{
           background: rgba(90,160,21,0.5);
           width: 24%;

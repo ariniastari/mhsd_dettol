@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
-              <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
+              <div class="btn-tosca" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
             <div class="modal fade" id="modal-dukung">
               <div class="modal-dialog">
