@@ -1574,7 +1574,7 @@ have a fixed width and height (but it's not required).
   text-decoration: none;
 }
 
-@media(min-width: 320px) and (max-width: 360px){
+@media(min-width: 320px) and (max-width: 359px){
   .jcarousel li{
     width: 160px;
   }
@@ -1584,6 +1584,19 @@ have a fixed width and height (but it's not required).
   }
   .jcarousel li .school-name{
     height: 97.5px;
+  }
+}
+
+@media(min-width: 360px){
+  .jcarousel li{
+    width: 180px;
+  }
+  .carousel-img{
+    width: 180px;
+    height: 109px;
+  }
+  .jcarousel li .school-name{
+    height: 109px;
   }
 }
 
