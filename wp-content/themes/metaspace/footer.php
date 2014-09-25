@@ -15,7 +15,7 @@
             <a href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
           </div>
           <p>
-            Untuk informasi lebih lanjut: <a href="www.dettol.co.id" target="_blank">www.dettol.co.id</a>
+            Untuk informasi lebih lanjut: <a href="http://dettol.co.id" target="_blank">www.dettol.co.id</a>
           </p>
           
         </div>
@@ -36,6 +36,12 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/cycle.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dettol.js"></script>
     <script>
+
+    $('.navbar-collapse a').click(function (e) {
+      if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
+        $('.navbar-collapse').collapse('toggle');
+      }
+    });
 
     function fbShare(url, title, descr, image, winWidth, winHeight) {
         var winTop = (screen.height / 2) - (winHeight / 2);

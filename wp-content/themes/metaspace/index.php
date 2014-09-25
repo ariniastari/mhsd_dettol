@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
-              <div class="btn-tosca hidden-xs" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
+              <div class="btn-tosca" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
             <div class="modal fade" id="modal-dukung">
               <div class="modal-dialog">
@@ -164,8 +164,25 @@
                           }
                         ?>
                       </div>
+                      <div class="visible-xs pic-collage-mobile clearfix">
+                        <div class="text-center">
+                        <?php
+                        $i = 1;
+                        if ($i <= 100) {
+                          foreach (get_images_facebook() as $value) { ?>
+                            <img src="<?php echo $value->profile_picture ?>" alt="">
+                         <?php 
+                            $i++;
+                          }
+                        }
+                        ?>
+                        </div>
+                        <div class="clearfix"></div>
+                      </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
-                      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt="">
+                      <div class="text-center">
+                        <a href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
+                      </div>
                     </div>
                   </div>
                 </div><!-- /.modal-content -->
@@ -173,9 +190,7 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a href="javascript:fbShare('<?php echo get_site_url(); ?>', 'Fb Share', 'Facebook share popup', 'http://goo.gl/dS52U', 520, 350)">
-                <div class="fb-white">
-                </div>
+              <a class="twitter fb-white" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_site_url(); ?>">
               </a>
               <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+tetap+hidup">
               </a>
@@ -257,7 +272,7 @@
         </div>
       </div>
       <div class="row forth">
-        <div class="col-md-3 col-sm-3 hidden-xs">
+        <div class="col-md-3 col-sm-3 col-xs-6">
           Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
         </div>
         <?php

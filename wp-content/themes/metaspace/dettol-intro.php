@@ -77,8 +77,7 @@
       ?>
     </div>
     <div class="btn-video" data-toggle="modal" data-target="#modal-video">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video.png" alt="">
-      <span>LIHAT VIDEO</span>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
     </div>
   </div>
   <div class="col-md-6 col-xs-12">
@@ -90,7 +89,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <div class="modal-body clearfix">
-          <embed width="100%" height="100%" src="http://www.youtube.com/v/oWy0_FqPrBw">
+          <iframe width="100%" height="100%" src="//www.youtube.com/embed/pvc66cUajqo" frameborder="0" allowfullscreen></iframe>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
