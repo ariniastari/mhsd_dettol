@@ -40,9 +40,6 @@
         ?>
       </ul>
     </div>
-    <div class="jcarousel-pagination visible-xs">
-        <!-- Pagination items will be generated in here -->
-    </div>
 
     <?php
       if( have_rows('second_gallery') ):
