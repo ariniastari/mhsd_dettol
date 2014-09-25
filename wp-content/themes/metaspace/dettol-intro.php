@@ -77,8 +77,7 @@
       ?>
     </div>
     <div class="btn-video" data-toggle="modal" data-target="#modal-video">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video.png" alt="">
-      <span>LIHAT VIDEO</span>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
     </div>
   </div>
   <div class="col-md-6 col-xs-12">
