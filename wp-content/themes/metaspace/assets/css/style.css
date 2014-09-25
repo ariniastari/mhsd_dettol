@@ -232,14 +232,24 @@ code {
     }
 
     .btn-video{
-      background: rgba(91,151,30,0.8);
       position: absolute;
-      top: 45%;
+      top: 31%;
       z-index: 100;
-      left: 50%;
+      left: 49%;
       padding: 10px;
       margin-left: -90px;
       cursor: pointer;
+    }
+
+    @media(max-width: 768px) {
+      .btn-video img{
+        width: 70%;
+      }
+
+      .btn-video{
+        top: 20%;
+        left: 54%;
+      }
     }
 
       .btn-video span{
