@@ -331,7 +331,7 @@ code {
     width: 80%;
     color: #585858;
     font-size: 17px;
-    margin: 30px 20px 0 20px;
+    margin: 30px 10% 0 10%;
     line-height: 30px;
   }
 
@@ -399,7 +399,7 @@ code {
 
           a.btn-share-tw{
             background: url(../img/share-tw.png);
-            width: 171px;
+            width: 181px;
             height: 35px;
             margin: auto;
           }
@@ -741,6 +741,13 @@ have a fixed width and height (but it's not required).
         margin-top: 25px;
       }
 
+      @media(max-width: 450px){
+        .modal-butuh .modal-body > .col-md-6:first-child{
+          padding-right: 15px;
+          margin-top: 0;
+        }
+      }
+
       .modal-butuh .modal-body > .col-md-6:first-child > .col-md-6:last-child > img{
         margin-bottom: 20px;
       }
@@ -811,6 +818,18 @@ have a fixed width and height (but it's not required).
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 15px;
+  }
+
+  @media (max-width: 768px){
+    #modal-dukung .col-md-3 .school-cont{
+      display: table-cell;
+      width: 129px;
+      height: 100px;
+      vertical-align: middle;
+    }
+    #modal-dukung .col-xs-6{
+      margin-bottom: 20px;
+    }
   }
 
   .school-pagination .pager{
