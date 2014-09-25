@@ -18,7 +18,7 @@
             foreach ($values as $value) {
               if ($counter % 2 != 0){ ?>
               <li>
-                <div class="carousel-img" style="background: url('<?php echo $value['second_gallery_image']; ?>')" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
+                <div class="carousel-img" style="background-image: url('<?php echo $value['second_gallery_image']; ?>')" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
                   <div class="school-name"><?php echo $value['second_gallery_title']; ?>
 
                   </div>
@@ -29,7 +29,7 @@
               <?php 
               }
               else { ?>
-                <div class="carousel-img" style="background: url('<?php echo $value['second_gallery_image']; ?>')" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
+                <div class="carousel-img" style="background-image: url('<?php echo $value['second_gallery_image']; ?>')" data-toggle="modal" data-target="#<?php echo $value['gallery_id'] ?>">
                   <div class="school-name"><?php echo $value['second_gallery_title']; ?>
                     
                   </div>

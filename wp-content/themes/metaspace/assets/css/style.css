@@ -1582,6 +1582,9 @@ have a fixed width and height (but it's not required).
     width: 160px;
     height: 97.5px;
   }
+  .jcarousel li .school-name{
+    height: 97.5px;
+  }
 }
 
 @media(min-width: 361px) and (max-width: 384px){
@@ -1592,7 +1595,9 @@ have a fixed width and height (but it's not required).
     width: 192px;
     height: 117px;
   }
-
+  .jcarousel li .school-name{
+    height: 117px;
+  }
 }
 
 @media(min-width: 385px) and (max-width: 450px){
@@ -1603,6 +1608,9 @@ have a fixed width and height (but it's not required).
     width: 225px;
     height: 137px;
   }
+  .jcarousel li .school-name{
+    height: 137px;
+  }
 }
 
 @media(min-width: 451px) and (max-width: 600px){
@@ -1611,6 +1619,9 @@ have a fixed width and height (but it's not required).
   }
   .carousel-img{
     width: 300px;
+    height: 182px;
+  }
+  .jcarousel li .school-name{
     height: 182px;
   }
 }
