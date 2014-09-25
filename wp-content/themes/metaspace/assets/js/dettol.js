@@ -26,36 +26,36 @@ $(document).ready(function(){
     }
   });
 
-  $('.jcarousel li img').hover(function(){
-    $(this).css('opacity','0.5');
-    $(this).next('.school-name').css('display','block');
-    },function(){
-    $(this).css('opacity','1');
-    $(this).next('.school-name').css('display','none');
-  });
-  $('.jcarousel li img:nth-child(3)').hover(function(){
-    $(this).css('opacity','0.5');
-    $(this).next('.school-name').css({
-      'display':'block',
-      'top':'70%'
-    });
-    },function(){
-    $(this).css('opacity','1');
-    $(this).next('.school-name').css('display','none');
-  });
+  // $('.jcarousel li img').hover(function(){
+  //   $(this).css('opacity','0.5');
+  //   $(this).next('.school-name').css('display','block');
+  //   },function(){
+  //   $(this).css('opacity','1');
+  //   $(this).next('.school-name').css('display','none');
+  // });
+  // $('.jcarousel li img:nth-child(3)').hover(function(){
+  //   $(this).css('opacity','0.5');
+  //   $(this).next('.school-name').css({
+  //     'display':'block',
+  //     'top':'70%'
+  //   });
+  //   },function(){
+  //   $(this).css('opacity','1');
+  //   $(this).next('.school-name').css('display','none');
+  // });
 
-  $('.jcarousel li .school-name:nth-child(2)').hover(function(){
-    $(this).prev('img').css('opacity', '0.5');
-    $(this).css('display','block');
-    },function(){
-    $(this).prev('img').css('opacity', '1');
-    $(this).css('display','none');
-  });
-  $('.jcarousel li .school-name:nth-child(4)').hover(function(){
-    $(this).prev('img').css('opacity', '0.5');
-    $(this).css('display','block');
-    },function(){
-    $(this).prev('img').css('opacity', '1');
-    $(this).css('display','none');
-  });
+  // $('.jcarousel li .school-name:nth-child(2)').hover(function(){
+  //   $(this).prev('img').css('opacity', '0.5');
+  //   $(this).css('display','block');
+  //   },function(){
+  //   $(this).prev('img').css('opacity', '1');
+  //   $(this).css('display','none');
+  // });
+  // $('.jcarousel li .school-name:nth-child(4)').hover(function(){
+  //   $(this).prev('img').css('opacity', '0.5');
+  //   $(this).css('display','block');
+  //   },function(){
+  //   $(this).prev('img').css('opacity', '1');
+  //   $(this).css('display','none');
+  // });
 });

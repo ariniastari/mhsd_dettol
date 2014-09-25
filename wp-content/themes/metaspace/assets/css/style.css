@@ -521,28 +521,28 @@ code {
 
       .forth.row .col-md-3:first-child{
         color: #61823E;
-        padding: 2%;
+        padding: 1.5%;
         height: 120px;
       }
 
       .forth.row .col-md-3:nth-child(2){
         background: #FCB140;
         color: #fff;
-        padding: 2%;
+        padding: 1.5%;
         height: 120px;
       }
 
       .forth.row .col-md-3:nth-child(3){
         background: #dbcb3b;
         color: #fff;
-        padding: 2%;
+        padding: 1.5%;
         height: 120px;
       }
 
       .forth.row .col-md-3:nth-child(4){
         background: #b0c731;
         color: #fff;
-        padding: 2%;
+        padding: 1.5%;
         height: 120px;
       }
 
@@ -648,15 +648,38 @@ have a fixed width and height (but it's not required).
 
 
 .jcarousel li .school-name{
-  display: none;
-  position: absolute;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-  width: 100%;
-  top: 20%;
+  visibility: hidden;
   font-size: 24px;
   text-transform: uppercase;
   color: #000;
+  height: 195px;
+  width: 320px;
   font-family: 'OpenSans Bold', Arial, sans-serif;
+}
+
+.carousel-img{
+  width: 320px;
+  height: 195px;
+ -webkit-background-size: cover !important;
+      -o-background-size: cover !important;
+         background-size: cover !important;
+  -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+       -o-transition: 0.5s;
+          transition: 0.5s;
+}
+
+.carousel-img:hover{
+  display: block;
+  opacity: 0.5;
+}
+
+.carousel-img:hover > .school-name{
+  visibility: visible;
 }
 
 @media(max-width: 450px){
@@ -1555,17 +1578,30 @@ have a fixed width and height (but it's not required).
   .jcarousel li{
     width: 160px;
   }
+  .carousel-img{
+    width: 160px;
+    height: 97.5px;
+  }
 }
 
 @media(min-width: 361px) and (max-width: 384px){
   .jcarousel li{
     width: 180px;
   }
+  .carousel-img{
+    width: 180px;
+    height: 109px;
+  }
+
 }
 
 @media(min-width: 385px) and (max-width: 450px){
   .jcarousel li{
     width: 192px;
+  }
+  .carousel-img{
+    width: 192px;
+    height: 117px;
   }
 }
 
@@ -1573,4 +1609,9 @@ have a fixed width and height (but it's not required).
   .jcarousel li{
     width: 300px;
   }
+  .carousel-img{
+    width: 300px;
+    height: 182px;
+  }
 }
+
