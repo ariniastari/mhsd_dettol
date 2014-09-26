@@ -1606,7 +1606,7 @@ have a fixed width and height (but it's not required).
   }
 }
 
-@media(min-width: 360px){
+@media(max-width: 360px){
   .jcarousel li{
     width: 180px;
   }

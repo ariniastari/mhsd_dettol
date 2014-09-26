@@ -82,7 +82,7 @@
   </div>
   <div class="col-md-6 col-xs-12">
     <?php the_field('intro_description'); ?>
-    <a href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
+    <a href="https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=<?php echo site_url()?>&redirect_uri=<?php echo esc_url( site_url( '#thank_you' ) ); ?>"><div class="btn-dukung"></div></a>
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">
