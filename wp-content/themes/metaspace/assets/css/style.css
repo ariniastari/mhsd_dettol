@@ -658,6 +658,7 @@ have a fixed width and height (but it's not required).
   height: 195px;
   width: 320px;
   font-family: 'OpenSans Bold', Arial, sans-serif;
+  background: url(../img/bg-hover.png);
 }
 
 .carousel-img{
@@ -675,7 +676,7 @@ have a fixed width and height (but it's not required).
 
 .carousel-img:hover{
   display: block;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .carousel-img:hover > .school-name{
@@ -1605,7 +1606,7 @@ have a fixed width and height (but it's not required).
   }
 }
 
-@media(min-width: 360px){
+@media(max-width: 360px){
   .jcarousel li{
     width: 180px;
   }
