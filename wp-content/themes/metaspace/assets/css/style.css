@@ -1429,7 +1429,6 @@ have a fixed width and height (but it's not required).
   #modal-video .modal-content{
     width: 320px;
     height: 400px;
-    margin: 0;
   }
 
 }
