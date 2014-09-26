@@ -1658,3 +1658,9 @@ have a fixed width and height (but it's not required).
   }
 }
 
+@media (max-width: 768px){
+  .carousel-img:hover > .school-name{
+    visibility: hidden;
+  }
+}
+
