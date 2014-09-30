@@ -89,7 +89,7 @@
       <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <div class="modal-body clearfix">
-          <iframe width="100%" height="100%" src="//www.youtube.com/embed/pvc66cUajqo" frameborder="0" allowfullscreen></iframe>
+          <iframe class="video" width="100%" height="100%" src="//www.youtube.com/embed/pvc66cUajqo" frameborder="0" allowfullscreen></iframe>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

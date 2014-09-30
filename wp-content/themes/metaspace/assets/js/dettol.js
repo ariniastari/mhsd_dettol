@@ -26,6 +26,11 @@ $(document).ready(function(){
     }
   });
 
+  $('#modal-video .close').click(function(){
+    $('.video').attr('src', '');
+    $('.video').attr('src', '//www.youtube.com/embed/pvc66cUajqo');
+  });
+
   // $('.jcarousel li img').hover(function(){
   //   $(this).css('opacity','0.5');
   //   $(this).next('.school-name').css('display','block');
