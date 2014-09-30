@@ -68,6 +68,10 @@ code {
     #modal-thanks .modal-body .col-md-6:last-child h3{
       line-height: 55px !important;
     }
+    #modal-thanks .twitter-follow-button{
+      float: none;
+      margin: auto;
+    }
   }
     
     .navbar-nav{
