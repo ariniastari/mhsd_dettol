@@ -115,9 +115,6 @@ For login page
 
 function new_fb_login() {
   if ($_REQUEST['loginFacebook'] == '1') {
-    if(is_user_logged_in()) {
-      do_action( 'wp_logout' );
-    } 
     new_fb_login_action();
   }
 }
@@ -192,9 +189,11 @@ function new_fb_login_action() {
                   array(
                     'email' => $user_profile['email'], 
                     'profile_picture' => 'https://graph.facebook.com/' . $user_profile['id'] . '/picture?type=large',
-                    'gender' => $user_profile['gender']
+                    'gender' => $user_profile['gender'],
+                    'source' => 'facebook'
                   ),
                   array(
+                    '%s',
                     '%s',
                     '%s',
                     '%s'

@@ -114,9 +114,6 @@ add_action('login_init', 'new_twitter_login');
 function new_twitter_login() {
 
   if ($_REQUEST['loginTwitter'] == '1') {
-    if(is_user_logged_in()) {
-      do_action( 'wp_logout' );
-    }
     new_twitter_login_action();
   }
 }
@@ -191,9 +188,11 @@ function new_twitter_login_action() {
                   array(
                     'email' => $email, 
                     'profile_picture' => $resp->profile_image_url,
-                    'gender' => 'N/A'
+                    'gender' => 'N/A',
+                    'source' => 'twitter'
                   ),
                   array(
+                    '%s',
                     '%s',
                     '%s',
                     '%s'
