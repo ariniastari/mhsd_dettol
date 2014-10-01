@@ -480,7 +480,7 @@ function new_fb_login_url() {
 function new_fb_redirect() {
 
   $site_url = site_url();
-  $site_url_back = site_url("#thank_you");
+  $site_url_back = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%23thank_you%3Fsource%3Dfacebook";
   $redirect = "https://www.facebook.com/dialog/share?app_id=943519405663654&display=popup&href=".$site_url."&redirect_uri=".$site_url_back;
 
   header('LOCATION: ' . $redirect);

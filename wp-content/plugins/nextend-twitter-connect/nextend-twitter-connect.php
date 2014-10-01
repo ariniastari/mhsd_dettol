@@ -554,7 +554,7 @@ function new_twitter_curPageURL() {
 
 function new_twitter_redirect() {
   
-  $url_back = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%23thank_you";
+  $url_back = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%23thank_you%3Fsource%3Dtwitter";
   $url = "http%3A%2F%2Fmisihidupsehatdettol.com";
   $text = "Kunjungi%20www.misihidupsehatdettol.com.%20Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup";
   $redirect = "https://twitter.com/share?text=".$text."&original_referer=".$url_back."&url=".$url;

@@ -205,8 +205,9 @@
                     <div class="col-md-6 hidden-xs col-sm-8">
                       <?php 
                         $user_ID = get_current_user_id();
-                        if($user_ID) { 
-                          echo get_avatar( $user_ID, 100 ); 
+                        if($user_ID) {
+                          <img src="<?php echo get_img_url_from_vote()->profile_picture; ?>" class='img-glow'/>
+                          // echo get_avatar( $user_ID, 100 ); 
                         }
                       ?>
                       <div class="hand-mask">
