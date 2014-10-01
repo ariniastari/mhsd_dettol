@@ -229,17 +229,8 @@ function new_twitter_login_action() {
           do_action('nextend_twitter_user_logged_in', $ID, $resp, $tmhOAuth);
         }
       } else {
-        if (new_twitter_is_user_connected()) {
-
-          // It was a simple login
-          
-        } elseif ($ID === NULL) { // Let's connect the account to the current user!
-    wp_logout();
-          new_twitter_login_action();
-        } else {
-          $user_info = wp_get_current_user();
-          set_site_transient($user_info->ID.'_new_twitter_admin_notice', __('This Twitter profile is already linked with other account. Linking process failed!', 'nextend-twitter-connect'), 3600);
-        }
+        wp_logout();
+        new_twitter_login_action();
       }
       new_twitter_redirect();
     } else {
