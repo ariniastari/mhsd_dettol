@@ -251,11 +251,13 @@ function new_twitter_login_action() {
           $wpdb->insert(
             'wp_vote_data',
             array(
-              'email' => $email, 
+              'email' => $current_user->user_email, 
               'profile_picture' => $resp->profile_image_url,
-              'gender' => 'N/A'
+              'gender' => 'N/A',
+              'source' => 'twitter'
             ),
             array(
+              '%s',
               '%s',
               '%s',
               '%s'
