@@ -114,11 +114,15 @@ add_action('login_init', 'new_twitter_login');
 function new_twitter_login() {
 
   if ($_REQUEST['loginTwitter'] == '1') {
+    if(is_user_logged_in()) {
+      do_action( 'wp_logout' );
+    }
     new_twitter_login_action();
   }
 }
 
 function new_twitter_login_action() {
+
   global $wp, $wpdb, $new_twitter_settings;
   if (isset($_GET['action']) && $_GET['action'] == 'unlink') {
     $user_info = wp_get_current_user();
@@ -229,8 +233,42 @@ function new_twitter_login_action() {
           do_action('nextend_twitter_user_logged_in', $ID, $resp, $tmhOAuth);
         }
       } else {
-        wp_logout();
-        new_twitter_login_action();
+        if (new_twitter_is_user_connected()) {
+
+          // It was a simple login
+          
+        } elseif ($ID === NULL) { // Let's connect the account to the current user!
+
+          $current_user = wp_get_current_user();
+          $wpdb->insert($wpdb->prefix . 'social_users', array(
+            'ID' => $current_user->ID,
+            'type' => 'twitter',
+            'identifier' => $resp->id
+          ) , array(
+            '%d',
+            '%s',
+            '%s'
+          ));
+          $wpdb->insert(
+            'wp_vote_data',
+            array(
+              'email' => $email, 
+              'profile_picture' => $resp->profile_image_url,
+              'gender' => 'N/A'
+            ),
+            array(
+              '%s',
+              '%s',
+              '%s'
+            ) 
+          );
+          do_action('nextend_twitter_user_account_linked', $ID, $resp, $tmhOAuth);
+          $user_info = wp_get_current_user();
+          set_site_transient($user_info->ID.'_new_twitter_admin_notice', __('Your Twitter profile is successfully linked with your account. Now you can sign in with Twitter easily.', 'nextend-twitter-connect'), 3600);
+        } else {
+          $user_info = wp_get_current_user();
+          set_site_transient($user_info->ID.'_new_twitter_admin_notice', __('This Twitter profile is already linked with other account. Linking process failed!', 'nextend-twitter-connect'), 3600);
+        }
       }
       new_twitter_redirect();
     } else {
@@ -297,7 +335,7 @@ function new_twitter_login_action() {
       exit;
     } else {
 
-      // print_r($tmhOAuth);
+      //print_r($tmhOAuth);
       echo "Twitter Error 1";
       exit;
     }
@@ -373,8 +411,8 @@ function new_add_twitter_connect_field() {
 ?>
   <table class="form-table">
     <tbody>
-      <tr>  
-        <th></th> 
+      <tr>	
+        <th></th>	
         <td>
           <?php
   if (new_twitter_is_user_connected()) {
@@ -517,9 +555,10 @@ function new_twitter_curPageURL() {
 
 function new_twitter_redirect() {
   
-  $url = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%23thank_you";
+  $url_back = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%23thank_you";
+  $url = "http%3A%2F%2Fmisihidupsehatdettol.com";
   $text = "Kunjungi%20www.misihidupsehatdettol.com.%20Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup";
-  $redirect = "https://twitter.com/share?text=".$text."&original_referer=".$url;
+  $redirect = "https://twitter.com/share?text=".$text."&original_referer=".$url_back."&url=".$url;
 
   header('LOCATION: ' . $redirect);
   exit;
@@ -573,108 +612,108 @@ if(!function_exists('login_header')){
      * Outputs the header for the login page.
      *
      * @uses do_action() Calls the 'login_head' for outputting HTML in the Log In
-     *    header.
+     *		header.
      * @uses apply_filters() Calls 'login_headerurl' for the top login link.
      * @uses apply_filters() Calls 'login_headertitle' for the top login title.
      * @uses apply_filters() Calls 'login_message' on the message to display in the
-     *    header.
+     *		header.
      * @uses $error The error global, which is checked for displaying errors.
      *
      * @param string $title Optional. WordPress Log In Page title to display in
-     *    <title/> element.
+     *		<title/> element.
      * @param string $message Optional. Message to display in header.
      * @param WP_Error $wp_error Optional. WordPress Error Object
      */
     function login_header($title = 'Log In', $message = '', $wp_error = '') {
-      global $error, $interim_login, $current_site, $action;
+    	global $error, $interim_login, $current_site, $action;
     
-      // Don't index any of these forms
-      add_action( 'login_head', 'wp_no_robots' );
+    	// Don't index any of these forms
+    	add_action( 'login_head', 'wp_no_robots' );
     
-      if ( empty($wp_error) )
-        $wp_error = new WP_Error();
+    	if ( empty($wp_error) )
+    		$wp_error = new WP_Error();
     
-      // Shake it!
-      $shake_error_codes = array( 'empty_password', 'empty_email', 'invalid_email', 'invalidcombo', 'empty_username', 'invalid_username', 'incorrect_password' );
-      $shake_error_codes = apply_filters( 'shake_error_codes', $shake_error_codes );
+    	// Shake it!
+    	$shake_error_codes = array( 'empty_password', 'empty_email', 'invalid_email', 'invalidcombo', 'empty_username', 'invalid_username', 'incorrect_password' );
+    	$shake_error_codes = apply_filters( 'shake_error_codes', $shake_error_codes );
     
-      if ( $shake_error_codes && $wp_error->get_error_code() && in_array( $wp_error->get_error_code(), $shake_error_codes ) )
-        add_action( 'login_head', 'wp_shake_js', 12 );
+    	if ( $shake_error_codes && $wp_error->get_error_code() && in_array( $wp_error->get_error_code(), $shake_error_codes ) )
+    		add_action( 'login_head', 'wp_shake_js', 12 );
     
-      ?><!DOCTYPE html>
-      <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-      <head>
-      <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-      <title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
-      <?php
+    	?><!DOCTYPE html>
+    	<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+    	<head>
+    	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    	<title><?php bloginfo('name'); ?> &rsaquo; <?php echo $title; ?></title>
+    	<?php
     
-      wp_admin_css( 'wp-admin', true );
-      wp_admin_css( 'colors-fresh', true );
+    	wp_admin_css( 'wp-admin', true );
+    	wp_admin_css( 'colors-fresh', true );
     
-      if ( wp_is_mobile() ) { ?>
-        <meta name="viewport" content="width=320; initial-scale=0.9; maximum-scale=1.0; user-scalable=0;" /><?php
-      }
+    	if ( wp_is_mobile() ) { ?>
+    		<meta name="viewport" content="width=320; initial-scale=0.9; maximum-scale=1.0; user-scalable=0;" /><?php
+    	}
     
-      do_action( 'login_enqueue_scripts' );
-      do_action( 'login_head' );
+    	do_action( 'login_enqueue_scripts' );
+    	do_action( 'login_head' );
     
-      if ( is_multisite() ) {
-        $login_header_url   = network_home_url();
-        $login_header_title = $current_site->site_name;
-      } else {
-        $login_header_url   = __( 'http://wordpress.org/' );
-        $login_header_title = __( 'Powered by WordPress' );
-      }
+    	if ( is_multisite() ) {
+    		$login_header_url   = network_home_url();
+    		$login_header_title = $current_site->site_name;
+    	} else {
+    		$login_header_url   = __( 'http://wordpress.org/' );
+    		$login_header_title = __( 'Powered by WordPress' );
+    	}
     
-      $login_header_url   = apply_filters( 'login_headerurl',   $login_header_url   );
-      $login_header_title = apply_filters( 'login_headertitle', $login_header_title );
+    	$login_header_url   = apply_filters( 'login_headerurl',   $login_header_url   );
+    	$login_header_title = apply_filters( 'login_headertitle', $login_header_title );
     
-      // Don't allow interim logins to navigate away from the page.
-      if ( $interim_login )
-        $login_header_url = '#';
+    	// Don't allow interim logins to navigate away from the page.
+    	if ( $interim_login )
+    		$login_header_url = '#';
     
-      $classes = array( 'login-action-' . $action, 'wp-core-ui' );
-      if ( wp_is_mobile() )
-        $classes[] = 'mobile';
-      if ( is_rtl() )
-        $classes[] = 'rtl';
-      $classes = apply_filters( 'login_body_class', $classes, $action );
-      ?>
-      </head>
-      <body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
-      <div id="login">
-        <h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-      <?php
+    	$classes = array( 'login-action-' . $action, 'wp-core-ui' );
+    	if ( wp_is_mobile() )
+    		$classes[] = 'mobile';
+    	if ( is_rtl() )
+    		$classes[] = 'rtl';
+    	$classes = apply_filters( 'login_body_class', $classes, $action );
+    	?>
+    	</head>
+    	<body class="login <?php echo esc_attr( implode( ' ', $classes ) ); ?>">
+    	<div id="login">
+    		<h1><a href="<?php echo esc_url( $login_header_url ); ?>" title="<?php echo esc_attr( $login_header_title ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+    	<?php
     
-      unset( $login_header_url, $login_header_title );
+    	unset( $login_header_url, $login_header_title );
     
-      $message = apply_filters('login_message', $message);
-      if ( !empty( $message ) )
-        echo $message . "\n";
+    	$message = apply_filters('login_message', $message);
+    	if ( !empty( $message ) )
+    		echo $message . "\n";
     
-      // In case a plugin uses $error rather than the $wp_errors object
-      if ( !empty( $error ) ) {
-        $wp_error->add('error', $error);
-        unset($error);
-      }
+    	// In case a plugin uses $error rather than the $wp_errors object
+    	if ( !empty( $error ) ) {
+    		$wp_error->add('error', $error);
+    		unset($error);
+    	}
     
-      if ( $wp_error->get_error_code() ) {
-        $errors = '';
-        $messages = '';
-        foreach ( $wp_error->get_error_codes() as $code ) {
-          $severity = $wp_error->get_error_data($code);
-          foreach ( $wp_error->get_error_messages($code) as $error ) {
-            if ( 'message' == $severity )
-              $messages .= '  ' . $error . "<br />\n";
-            else
-              $errors .= '  ' . $error . "<br />\n";
-          }
-        }
-        if ( !empty($errors) )
-          echo '<div id="login_error">' . apply_filters('login_errors', $errors) . "</div>\n";
-        if ( !empty($messages) )
-          echo '<p class="message">' . apply_filters('login_messages', $messages) . "</p>\n";
-      }
+    	if ( $wp_error->get_error_code() ) {
+    		$errors = '';
+    		$messages = '';
+    		foreach ( $wp_error->get_error_codes() as $code ) {
+    			$severity = $wp_error->get_error_data($code);
+    			foreach ( $wp_error->get_error_messages($code) as $error ) {
+    				if ( 'message' == $severity )
+    					$messages .= '	' . $error . "<br />\n";
+    				else
+    					$errors .= '	' . $error . "<br />\n";
+    			}
+    		}
+    		if ( !empty($errors) )
+    			echo '<div id="login_error">' . apply_filters('login_errors', $errors) . "</div>\n";
+    		if ( !empty($messages) )
+    			echo '<p class="message">' . apply_filters('login_messages', $messages) . "</p>\n";
+    	}
     } // End of login_header()
     
     /**
@@ -683,26 +722,26 @@ if(!function_exists('login_header')){
      * @param string $input_id Which input to auto-focus
      */
     function login_footer($input_id = '') {
-      global $interim_login;
+    	global $interim_login;
     
-      // Don't allow interim logins to navigate away from the page.
-      if ( ! $interim_login ): ?>
-      <p id="backtoblog"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Are you lost?' ); ?>"><?php printf( __( '&larr; Back to %s' ), get_bloginfo( 'title', 'display' ) ); ?></a></p>
-      <?php endif; ?>
+    	// Don't allow interim logins to navigate away from the page.
+    	if ( ! $interim_login ): ?>
+    	<p id="backtoblog"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Are you lost?' ); ?>"><?php printf( __( '&larr; Back to %s' ), get_bloginfo( 'title', 'display' ) ); ?></a></p>
+    	<?php endif; ?>
     
-      </div>
+    	</div>
     
-      <?php if ( !empty($input_id) ) : ?>
-      <script type="text/javascript">
-      try{document.getElementById('<?php echo $input_id; ?>').focus();}catch(e){}
-      if(typeof wpOnload=='function')wpOnload();
-      </script>
-      <?php endif; ?>
+    	<?php if ( !empty($input_id) ) : ?>
+    	<script type="text/javascript">
+    	try{document.getElementById('<?php echo $input_id; ?>').focus();}catch(e){}
+    	if(typeof wpOnload=='function')wpOnload();
+    	</script>
+    	<?php endif; ?>
     
-      <?php do_action('login_footer'); ?>
-      <div class="clear"></div>
-      </body>
-      </html>
-      <?php
+    	<?php do_action('login_footer'); ?>
+    	<div class="clear"></div>
+    	</body>
+    	</html>
+    	<?php
     }
 }

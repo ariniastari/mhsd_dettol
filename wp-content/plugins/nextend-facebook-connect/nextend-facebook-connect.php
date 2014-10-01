@@ -115,16 +115,15 @@ For login page
 
 function new_fb_login() {
   if ($_REQUEST['loginFacebook'] == '1') {
+    if(is_user_logged_in()) {
+      do_action( 'wp_logout' );
+    } 
     new_fb_login_action();
   }
 }
 add_action('login_init', 'new_fb_login');
 
 function new_fb_login_action() {
-
-  if(is_user_logged_in()) {
-    wp_logout();
-  }
   global $wp, $wpdb, $new_fb_settings;
   if (isset($_GET['action']) && $_GET['action'] == 'unlink') {
     $user_info = wp_get_current_user();
