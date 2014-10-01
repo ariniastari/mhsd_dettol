@@ -206,9 +206,13 @@
                       <?php 
                         $user_ID = get_current_user_id();
                         if($user_ID) {
+                          if(get_img_url_from_vote($_GET['source'])[0]) {
                       ?>
-                          <img src="<?php echo get_img_url_from_vote($_GET['source'])[0]->profile_picture; ?>" class='img-glow'/>
+                            <img src="<?php echo get_img_url_from_vote($_GET['source'])[0]->profile_picture; ?>" class='img-glow'/>
                       <?php 
+                          } else {
+                            echo get_avatar( $user_ID, 100 );
+                          }
                         }
                       ?>
                       <div class="hand-mask">
