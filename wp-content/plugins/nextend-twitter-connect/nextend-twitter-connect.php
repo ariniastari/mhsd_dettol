@@ -230,6 +230,7 @@ function new_twitter_login_action() {
           do_action('nextend_twitter_user_logged_in', $ID, $resp, $tmhOAuth);
         }
       } else {
+        wp_logout();
         if (new_twitter_is_user_connected()) {
 
           // It was a simple login
