@@ -236,7 +236,7 @@
                       <div class="clearfix">
                         <a class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
-                        <a class="twitter btn-share-tw" href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">">
+                        <a class="btn-share-tw" href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">">
                         </a>
                       </div>
                       <h5>
