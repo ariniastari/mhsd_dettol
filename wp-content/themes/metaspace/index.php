@@ -273,10 +273,10 @@
       </div>
       <div class="row forth">
         <div class="col-md-3 col-sm-3 col-xs-6">
-          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehat</strong>
+          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehatdettol</strong>
         </div>
         <?php
-          $tweets = searchTweets(3, '#misihidupsehat');
+          $tweets = searchTweets(3, '#misihidupsehatdettol');
           //d($tweets);
             if (!$tweets['error'] && $tweets){
               foreach ($tweets['statuses'] as $value) { ?>
