@@ -122,6 +122,9 @@ add_action('login_init', 'new_fb_login');
 
 function new_fb_login_action() {
 
+  if(is_user_logged_in()) {
+    wp_logout();
+  }
   global $wp, $wpdb, $new_fb_settings;
   if (isset($_GET['action']) && $_GET['action'] == 'unlink') {
     $user_info = wp_get_current_user();
