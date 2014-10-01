@@ -44,11 +44,14 @@ function get_images_facebook(){
 	return $data;
 }
 
-function get_img_url_from_vote(){
+function get_img_url_from_vote($src){
 	global $user_email, $wpdb;
     get_currentuserinfo();
-    $src = $_GET['source'];
-    $data = $wpdb->get_results( "SELECT profile_picture FROM wp_vote_data WHERE email = '%s' AND source = '%s'",$user_email, $source);
+    //dd($_GET);
+    $query = "SELECT profile_picture FROM wp_vote_data WHERE email = '".$user_email."' AND source = '".$src."'";
+    //dd($query);
+    $data = $wpdb->get_results($query);
+    //dd($data);
     return $data;
 }
 

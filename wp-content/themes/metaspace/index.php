@@ -1,4 +1,4 @@
-<?php get_header(); //dd(get_field('jumlah_dukungan'));?>
+<?php get_header(); //dd(get_img_url_from_vote($_GET['source']));//dd(get_img_url_from_vote());//dd(get_field('jumlah_dukungan'));?>
 
   <body>
     <div id="fb-root"></div>
@@ -206,8 +206,9 @@
                       <?php 
                         $user_ID = get_current_user_id();
                         if($user_ID) {
-                          <img src="<?php echo get_img_url_from_vote()->profile_picture; ?>" class='img-glow'/>
-                          // echo get_avatar( $user_ID, 100 ); 
+                      ?>
+                          <img src="<?php echo get_img_url_from_vote($_GET['source'])[0]->profile_picture; ?>" class='img-glow'/>
+                      <?php 
                         }
                       ?>
                       <div class="hand-mask">
