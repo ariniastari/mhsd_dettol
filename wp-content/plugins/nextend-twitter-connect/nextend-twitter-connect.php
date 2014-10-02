@@ -188,9 +188,11 @@ function new_twitter_login_action() {
                   array(
                     'email' => $email, 
                     'profile_picture' => $resp->profile_image_url,
-                    'gender' => 'N/A'
+                    'gender' => 'N/A',
+                    'source' => 'twitter'
                   ),
                   array(
+                    '%s',
                     '%s',
                     '%s',
                     '%s'
@@ -249,11 +251,13 @@ function new_twitter_login_action() {
           $wpdb->insert(
             'wp_vote_data',
             array(
-              'email' => $email, 
+              'email' => $current_user->user_email, 
               'profile_picture' => $resp->profile_image_url,
-              'gender' => 'N/A'
+              'gender' => 'N/A',
+              'source' => 'twitter'
             ),
             array(
+              '%s',
               '%s',
               '%s',
               '%s'
@@ -552,17 +556,12 @@ function new_twitter_curPageURL() {
 
 function new_twitter_redirect() {
   
-  $redirect = get_site_transient( nextend_uniqid().'_twitter_r');
+  $url_back = "http%3A%2F%2Fmisihidupsehatdettol.com%2F%3Fsource%3Dtwitter%23thank_you";
+  $url = "http%3A%2F%2Fmisihidupsehatdettol.com";
+  $text = "Kunjungi%20www.misihidupsehatdettol.com.%20Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup";
+  $redirect = "https://twitter.com/share?text=".$text."&original_referer=".$url_back."&url=".$url;
 
-  if (!$redirect || $redirect == '' || $redirect == new_twitter_login_url()) {
-    if (isset($_GET['redirect'])) {
-      $redirect = $_GET['redirect'];
-    } else {
-      $redirect = site_url();
-    }
-  }
   header('LOCATION: ' . $redirect);
-  delete_site_transient( nextend_uniqid().'_twitter_r');
   exit;
 }
 

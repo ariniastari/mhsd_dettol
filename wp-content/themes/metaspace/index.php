@@ -1,4 +1,4 @@
-<?php get_header(); //dd(get_field('jumlah_dukungan'));?>
+<?php get_header(); //dd(get_img_url_from_vote($_GET['source']));//dd(get_img_url_from_vote());//dd(get_field('jumlah_dukungan'));?>
 
   <body>
     <div id="fb-root"></div>
@@ -191,7 +191,7 @@
               <span>Sebarkan gerakan ini</span>
               <a class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
               </a>
-              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+terus+hidup">
+              <a class="twitter-white" href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -204,8 +204,14 @@
                     <div class="col-md-6 hidden-xs col-sm-8">
                       <?php 
                         $user_ID = get_current_user_id();
-                        if($user_ID) { 
-                          echo get_avatar( $user_ID, 100 ); 
+                        if($user_ID) {
+                          if(get_img_url_from_vote($_GET['source'])[0]) {
+                      ?>
+                            <img src="<?php echo get_img_url_from_vote($_GET['source'])[0]->profile_picture; ?>" class='img-glow'/>
+                      <?php 
+                          } else {
+                            echo get_avatar( $user_ID, 100 );
+                          }
                         }
                       ?>
                       <div class="hand-mask">
@@ -235,7 +241,7 @@
                       <div class="clearfix">
                         <a class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
-                        <a class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+terus+hidup">
+                        <a class="btn-share-tw" href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
                         </a>
                       </div>
                       <h5>

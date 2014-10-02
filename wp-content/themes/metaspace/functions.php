@@ -44,6 +44,17 @@ function get_images_facebook(){
 	return $data;
 }
 
+function get_img_url_from_vote($src){
+	global $user_email, $wpdb;
+    get_currentuserinfo();
+    //dd($_GET);
+    $query = "SELECT profile_picture FROM wp_vote_data WHERE email = '".$user_email."' AND source = '".$src."'";
+    //dd($query);
+    $data = $wpdb->get_results($query);
+    //dd($data);
+    return $data;
+}
+
 if ( !function_exists('wp_new_user_notification') ) {
 	function wp_new_user_notification( ) {}
 }
