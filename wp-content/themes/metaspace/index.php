@@ -105,7 +105,6 @@
                           <div class="prev">
                             < Prev
                           </div>
-                          <div class="pager"></div>
 
                           <div class="next">
                             Next >
