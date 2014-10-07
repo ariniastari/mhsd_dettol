@@ -37,22 +37,6 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/dettol.js"></script>
     <script>
 
-    $('.btn-dukung').on('click', function() {
-      ga('send', 'event', 'button', 'click', 'vote-button');
-    });
-
-    $('.btn-share-fb').on('click', function() {
-      ga('send', 'event', 'button', 'click', 'fbshare-button');
-    });
-
-    $('.fb-white').on('click', function() {
-      ga('send', 'event', 'button', 'click', 'fbshare-button');
-    });
-
-    $('.twitter').on('click', function() {
-      ga('send', 'event', 'button', 'click', 'twshare-button');
-    });
-
     $('.navbar-collapse a').click(function (e) {
       if($('.navbar-toggle').css('display') == 'block' && !$(this).siblings().length){
         $('.navbar-collapse').collapse('toggle');

@@ -5,7 +5,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a href="<?php echo site_url(); ?>/?dettol_vote=true" class='right hidden-sm hidden-md hidden-lg'>
+    <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true" class='right hidden-sm hidden-md hidden-lg'>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung-mobile.png" alt="" width="80" height="80">
     </a>
     <div class="logo-bg">
@@ -19,7 +19,7 @@
       <li><a href="#second">mereka yang membutuhkan</a></li>
       <li><a href="#third">Dukungan yang diterima</a></li>
       <li><a class="wider" href="" data-toggle="modal" data-target="#modal-wallofpic">GALERI DUKUNGAN ANDA</a></li>
-      <li class="active"><a href="<?php echo site_url(); ?>/?dettol_vote=true">ULURKAN <br/>TANGAN</a></li>
+      <li class="active"><a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true">ULURKAN <br/>TANGAN</a></li>
     </ul>
   </div><!--/.nav-collapse -->
   <!-- ADD HIDDEN SM -->

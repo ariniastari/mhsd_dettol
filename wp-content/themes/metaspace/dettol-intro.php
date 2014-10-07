@@ -77,12 +77,12 @@
       ?>
     </div>
     <div class="btn-video" data-toggle="modal" data-target="#modal-video">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
+      <img onclick="ga('send', 'event', 'button', 'click', 'play-video');" src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
     </div>
   </div>
   <div class="col-md-6 col-xs-12">
     <?php the_field('intro_description'); ?>
-    <a href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
+    <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">

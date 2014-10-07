@@ -180,7 +180,7 @@
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <div class="text-center">
-                        <a href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
+                        <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -189,9 +189,9 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
+              <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
               </a>
-              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
+              <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -233,9 +233,9 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari Galeri <strong>Misi Hidup Sehat Dettol</strong>. </p>
                       <div class="clearfix">
-                        <a class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
-                        <a class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
                         </a>
                       </div>
                       <h5>
