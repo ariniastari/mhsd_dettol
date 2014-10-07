@@ -233,9 +233,9 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari Galeri <strong>Misi Hidup Sehat Dettol</strong>. </p>
                       <div class="clearfix">
-                        <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button-thankyou');" class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
-                        <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button-thankyou');" class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
                         </a>
                       </div>
                       <h5>
