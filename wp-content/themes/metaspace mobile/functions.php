@@ -19,9 +19,6 @@ function create_post_type() {
 }
 add_action( 'init', 'create_post_type' );
 
-// Show posts of 'post', 'page' and 'movie' post types on home page
-add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
-
 function query_vote_split_to_array(){
 	global $wpdb;
 	$vote_count = $wpdb->get_var( "SELECT COUNT(*) FROM wp_vote_data" );
