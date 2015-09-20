@@ -32,3 +32,17 @@
   font-family: 'OpenSans Semibold';
   src: url('../fonts/OpenSans-Semibold.ttf');
 }
+
+@font-face {
+  font-family: 'Colette-Bold';
+  src: url('../fonts/Colette-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Colette-Light';
+  src: url('../fonts/Colette-Light.ttf');
+}
+@font-face {
+  font-family: 'Colette-Regular';
+  src: url('../fonts/Colette-Regular.ttf');
+}

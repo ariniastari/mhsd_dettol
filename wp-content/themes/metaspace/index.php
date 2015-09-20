@@ -35,22 +35,26 @@
                 Dukung dan sebarkan gerakan ini agar lebih banyak anak-anak terlindungi.
               </p>
             </div>
-            <div class="col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
+            <div class="col-xs-12 text-center">
               <div class="counter clearfix">
+                <p>TANGAN YANG TELAH MENDUKUNG:</p>
                 <?php
                   foreach (query_vote_split_to_array() as $value) { ?>
                     <div class="counter-number">
+                      <div class="counter-value">
                       <?php 
                         echo $value; 
                       ?>
+                      </div>
                     </div>
                  <?php 
                   }
                 ?>
                 <div class="clearfix"></div>
+                <p><small>*Mencakup dukungan yang diterima melalui tanda tangan siswa-siswa sekolah</small></p>
               </div>
             </div>
-            <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
+            <div class="col-md-12 text-center">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
               <div class="btn-tosca" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
@@ -59,8 +63,10 @@
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <div class="modal-body clearfix">
-                    <h3>Sekolah yang Telah Mendukung</h3>
-                    <p>Ratusan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
+                    <h3>dukungan yang diterima</h3>
+                    <p>Ratusan sekolah telah berpartisipasi memberikan dukungan kepada Misi Hidup Sehat Dettol.<br/>
+Bergabunglah bersama mereka dengan memberikan dukungan Anda dan jadilah bagian dari Galeri Misi Hidup Sehat Dettol.
+</p>
                       <div class="cycle-slideshow school-pagination clearfix" data-cycle-slides=".page" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".pager">
                         <?php
                           $dataset = get_field('daftar_sekolah');
@@ -191,11 +197,7 @@
               <span>Sebarkan gerakan ini</span>
               <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
               </a>
-<<<<<<< HEAD
-              <a class="twitter-white" href="<?php echo site_url(); ?>/wp-login.php?loginTwitter=1">
-=======
               <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
->>>>>>> dev
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -281,15 +283,15 @@
         </div>
       </div>
       <div class="row forth">
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehatdettol</strong>
+        <div class="col-xs-12 instruction text-center">
+          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <span class="collete-bold ">#misihidupsehatdettol</span>
         </div>
         <?php
           $tweets = searchTweets(3, '#misihidupsehatdettol');
           //d($tweets);
             if (!$tweets['error'] && $tweets){
               foreach ($tweets['statuses'] as $value) { ?>
-              <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="col-sm-4 col-xs-6">
                 <?php echo $value['text']; ?>    
                 <i class="fa fa-twitter"></i> - <?php echo "@".$value['user']['screen_name']; ?>
               </div>  
