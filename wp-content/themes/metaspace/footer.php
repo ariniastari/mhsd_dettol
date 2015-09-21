@@ -9,7 +9,7 @@
     </div>
     <div class="col-sm-8">
       <div class="text">
-        <p class="inline">Copyright Dettol 2014</p>
+        <p class="inline">Copyright Dettol 2015</p>
         <a href="http://legal.reckittbenckiser.com/ID/PrivacyStatement.htm" target="_blank">Privacy Policy</a>
         <a class="last" href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
         <p>
