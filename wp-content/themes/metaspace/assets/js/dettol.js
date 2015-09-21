@@ -26,9 +26,8 @@ $(document).ready(function(){
     }
   });
 
-  $('#modal-video .close').click(function(){
-    $('.video').attr('src', '');
-    $('.video').attr('src', '//www.youtube.com/embed/pvc66cUajqo');
+  $("#modal-video").on('hidden.bs.modal', function (e) {
+    $("#modal-video iframe").attr("src", $("#modal-video iframe").attr("src"));
   });
 
   // $('.jcarousel li img').hover(function(){
