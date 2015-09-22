@@ -817,17 +817,17 @@ have a fixed width and height (but it's not required).
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > h3{
         font-size: 24px;
         color: #5AA015;
-        font-family: 'OpenSans Bold', Arial, sans-serif;
+        font-family: 'Colette-Bold', Arial, sans-serif;
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > h3 span{
         color: #585858;
-        font-family: 'OpenSans Light', Arial, sans-serif;
+        font-family: 'Colette-Light', Arial, sans-serif;
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > p{
         color: #000;
-        font-family: 'OpenSans Semibold', Arial, sans-serif;
+        font-family: 'Colette-Regular', Arial, sans-serif;
         font-size: 16px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -839,7 +839,7 @@ have a fixed width and height (but it's not required).
         top: -60px;
         right: 0;
         font-size: 60px;
-        font-family: 'OpenSans Light', Arial, sans-serif;
+        font-family: 'Colette-Light', Arial, sans-serif;
         opacity: 1;
       }
 
@@ -908,7 +908,7 @@ have a fixed width and height (but it's not required).
     cursor: pointer;
     color: #5AA015;
     float: left;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
     margin-right: 30px;
   }
 
@@ -916,7 +916,7 @@ have a fixed width and height (but it's not required).
     cursor: pointer;
     color: #5AA015;
     float: left;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
     margin-left: 30px;
   }
 
@@ -979,7 +979,7 @@ have a fixed width and height (but it's not required).
     #modal-wallofpic .modal-body .col-md-6:last-child h3,
     #modal-thanks .modal-body .col-md-6:last-child h3{
       color: #fff600;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       font-size: 24px;
       text-transform: uppercase;
       margin-bottom: 20px;
