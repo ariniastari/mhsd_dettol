@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
     <meta charset="utf-8">
     <title>Misi Hidup Sehat Dettol</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
