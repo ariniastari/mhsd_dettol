@@ -1706,6 +1706,7 @@ have a fixed width and height (but it's not required).
   background: #ffffff;
   text-align: center;
   padding: 50px;
+  font-size: 1.25em;
 }
 .counter-value {
   margin-top: 30%;
