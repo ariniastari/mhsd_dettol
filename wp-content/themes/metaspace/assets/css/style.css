@@ -221,12 +221,12 @@ code {
     margin: 30px auto 0 auto;
     font-size: 17px;
     line-height: 26px;
-    font-family: 'SegoeUI Semibold', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
   }
 
   .first > .col-md-6 p span{
     color: #E4FF00;
-    font-family: 'SegoeUI Bold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
   }
 
   .first > .col-md-6 p.last{
@@ -999,7 +999,7 @@ have a fixed width and height (but it's not required).
     #modal-wallofpic .modal-body .col-md-6:last-child p,
     #modal-thanks .modal-body .col-md-6:last-child p{
       color: #fff;
-      font-family: 'SegoeUI Semibold', Arial, sans-serif;
+      font-family: 'Colette-Regular', Arial, sans-serif;
       font-size: 16px;
       margin-bottom: 30px;
       width: 100%;
@@ -1015,7 +1015,7 @@ have a fixed width and height (but it's not required).
       float: left;
       padding: 10px 20px;
       font-size: 25px;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       margin-right: 10px;
     }
 
@@ -1027,13 +1027,13 @@ have a fixed width and height (but it's not required).
 
     #modal-thanks .modal-body .col-md-6:last-child h5{
       color: #DAF902;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       font-size: 16px;
       margin-top: 50px;
     }
     #modal-thanks .modal-body .col-md-6:last-child h5 span{
       color: #FFF;
-      font-family: 'OpenSans Light', Arial, sans-serif;
+      font-family: 'Colette-Light', Arial, sans-serif;
       line-height: 24px;
     }
 
