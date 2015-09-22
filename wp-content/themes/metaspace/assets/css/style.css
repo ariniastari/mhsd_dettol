@@ -769,10 +769,16 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-dialog{
-    width: 995px;
     margin: 70px auto 0 auto;
   }
-
+  @media(min-width: 992px){
+    .modal-dialog{
+      width: 995px;
+    }
+  }
+  #modal-video .modal-dialog {
+    width: 600px;
+  }
   .modal-butuh{
     background: url(../img/popup.jpg);
     width: 995px;
@@ -922,9 +928,9 @@ have a fixed width and height (but it's not required).
     margin: auto;
   }
 
-.modal-dialog{
+/*.modal-dialog{
   width: 100%;
-}
+}*/
 
 #modal-vote .btn-tosca {
   float: none;
@@ -1014,7 +1020,7 @@ have a fixed width and height (but it's not required).
     }
 
 #modal-video .modal-content{
-  width: 60%;
+  /*width: 60%;*/
   height: 400px;
   margin: auto;
 }
