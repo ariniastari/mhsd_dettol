@@ -1,5 +1,137 @@
 <div class="row first" id="first">
-  <div class="col-md-6 col-xs-12">
+  <div class="col-xs-12">
+    <div class="cycle-slideshow" data-cycle-timeout="6000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 1) {
+      ?>
+
+                <img src="<?php the_sub_field('image_bottom_left'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
+    <div class="cycle-slideshow" data-cycle-timeout="4000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 2) {
+      ?>
+
+                <img src="<?php the_sub_field('image_top_left'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
+    <div class="cycle-slideshow" data-cycle-timeout="9000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 2) {
+      ?>
+
+                <img src="<?php the_sub_field('image_top_right'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
+    <div class="cycle-slideshow" data-cycle-timeout="4000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 2) {
+      ?>
+
+                <img src="<?php the_sub_field('image_bottom_left'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
+    <div class="cycle-slideshow" data-cycle-timeout="7000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 0) {
+      ?>
+
+                <img src="<?php the_sub_field('image_bottom_right'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
+    <div class="cycle-slideshow" data-cycle-timeout="4000" data-cycle-speed="2000">
+      <?php
+        if( have_rows('intro_photo_gallery') ):
+          $i = 0;
+            while ( have_rows('intro_photo_gallery') ) : the_row();
+              if($i > 0) {
+      ?>
+
+                <img src="<?php the_sub_field('image_bottom_left'); ?>" alt="" width="100%" class="img-responsive">
+                
+      <?php
+        }
+        $i++;
+            endwhile;
+
+        else :
+
+            // no rows found
+
+        endif;
+      ?>
+    </div>
     <div class="cycle-slideshow" data-cycle-timeout="5000" data-cycle-speed="2000">
       <?php
         if( have_rows('intro_photo_gallery') ):
@@ -77,12 +209,14 @@
       ?>
     </div>
     <div class="btn-video" data-toggle="modal" data-target="#modal-video">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
+      <img onclick="ga('send', 'event', 'button', 'click', 'play-video');" src="<?php echo get_template_directory_uri(); ?>/assets/img/video-button.png" alt="">
     </div>
+
   </div>
-  <div class="col-md-6 col-xs-12">
+  <div class="col-xs-12 intro">
     <?php the_field('intro_description'); ?>
-    <a href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
+    <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
+    
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">

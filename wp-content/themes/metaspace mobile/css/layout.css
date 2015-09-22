@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background: #f0f0f0;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.clearfix {
+    clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 5px 0;
+}
+.one,
+.two,
+.three,
+.four {
+    margin: 0;
+}
+.one {
+    background: #fff;
+    padding: 3px;
+}
+.two {
+    background: #fcb140;
+    color: #fff;
+    padding: 3px;
+}
+.three {
+    background: #dbcb3b;
+    color: #fff;
+    padding: 3px;
+}
+.four {
+    background: #b0c731;
+    color: #fff;
+    padding: 3px;
+}
+#home {
+    background: #277c0a;
+    color: #fff;
+    padding: 5px 3px;
+}
+#pageone {
+    padding: 5px 3px;
+    background: #e0f1d5;
+}
+#pagefive {
+    padding: 5px 3px;
+    background: #f0f0f0;
+    color: #0e5303;
+    text-align: center;
+}
+.listsekolah ul {
+    padding: 0;
+    margin: 0;
+}
+.listsekolah ul li {
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 3px;
+    background: #0e5303;
+    color: #fff;
+}
+#pagetwo {
+    padding: 5px 3px;
+    background: #277c0a;
+    color: #fff;
+}
+#pagethree {
+    padding: 5px 3px;
+    background: #37911e;
+    color: #fff;
+    text-align: center;
+}
+#pagethree h3 {
+    color: #e6e200;
+}
+#pagefour {
+    padding: 5px 3px;
+    background: #37911e;
+    color: #fff;
+    text-align: center;
+}
+#pagefour h2 {
+    color: #e6e200;
+}
+#pagefour h4 {
+    color: #e6e200;
+}
+#pagefour h5 {
+    color: #e6e200;
+}
+#pagetwo a {
+    color: #fff;
+}
+.dukungan {
+    background: #d3d6d3;
+    width: 40%;
+    margin: 0 auto;
+}
+.dukungan p {
+    color: #25327b;
+}
+#pageone h4 {
+    color: #5ea211;
+}
+#footer {
+    text-align: center;
+}
+#footer p img {
+    margin-right: 10px;
+}
+#footer a {
+    color: #5ea211;
+}
+.sitedettol {
+    margin-top: 0;
+}
+.info {
+    margin-bottom: 2px;
+}
+b {
+    color: #e4ff00;
+}
+#side ul {
+    padding: 0;
+    margin: 0;
+}
+#side ul li {
+    background: #74AF3B;
+    margin-bottom: 2px;
+    padding:7px 3px;
+    font-size: 14px;
+}
+#side ul li a {
+    color: #fff;
+}
+#home {
+    text-align: center;
+}
+#side {
+    text-align: center;
+}
+#topfoo {
+    text-align: center;
+}
+#pageone {
+    text-align: center;
+}
+#pagetwo {
+    text-align: center;
+}

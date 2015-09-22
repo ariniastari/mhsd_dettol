@@ -6,6 +6,8 @@
 html,
 body {
   height: 100%;
+  font-family: "Colette-Light";
+  color: #555553;
   /* The html and body elements cannot have any padding or margin. */
 }
 .left{
@@ -42,11 +44,11 @@ code {
   
   .navbar-default{
     height: 115px;
-    background: #f0f0f0;
+    background: #555553;
     border-bottom: 0;
     -webkit-box-shadow: 1px 0px 2px 0px #BCBCBC;
             box-shadow: 1px 0px 2px 0px #BCBCBC;
-    font-family: 'NotoSans Bold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
   }
 
   @media (max-width: 450px){
@@ -85,19 +87,21 @@ code {
 
       .navbar-default .navbar-nav li.active a{
         color: #FFF;
-        background: #74AF3B;
+        background: #4db043;
       }
 
       .navbar-default .navbar-nav li a{
-        color: #713A00;
+        color: #eeefff;
         text-transform: uppercase;
-        background: #FFF;
         margin-right: 10px;
         min-width: 70px;
         max-width: 150px;
         padding-top: 8px;
         padding-bottom: 8px;
         text-align: center;
+      }
+      .navbar-default .navbar-nav li:hover a{
+        color: #4db043;
       }
 
       .navbar-default .navbar-nav li a.wider{
@@ -110,7 +114,7 @@ code {
 
     .logo-bg{
       background: url(../img/logo-mobile.png);
-      width: 310px;
+      width: 279px;
       height: 121px;
       margin-top: -10px;
     }
@@ -118,8 +122,20 @@ code {
     @media(min-width: 768px ){
       .logo-bg {
         background: url(../img/logo.png);
-        width: 310px;
-        height: 176px;
+        width: 279px;
+        height: 158px;
+        background-position-x: -135px;
+        background-repeat: no-repeat;
+      }
+    }
+    @media(min-width: 978px ){
+      .logo-bg {
+        background-position-x: -40px;
+      }
+    }
+    @media(min-width: 1200px ){
+      .logo-bg {
+        background-position-x: 0;
       }
     }
 
@@ -146,7 +162,7 @@ code {
       }
 
         .navbar-right a:first-child img{
-          margin: 5px 40px 0 0;
+          margin: 20px 40px 0 0;
         }
 
         .navbar-right a:nth-child(2) img{
@@ -154,7 +170,15 @@ code {
         }
 
         .navbar-right a:last-child img{
-          margin: 35px 40px 0 0;
+          margin: 20px 40px 0 0;
+        }
+/*
+        .navbar-right .img-logo-right{
+          width: 78px;
+        }*/
+
+        .navbar-right .img-socmed-right{
+          width: 33px;
         }
 
 .first{
@@ -166,7 +190,7 @@ code {
     margin-right: 0;
   }
 
-  .first > .col-md-6:first-child{
+  .first > .col-xs-12:first-child{
     padding: 0;
     position: relative;
   }
@@ -187,9 +211,9 @@ code {
     height: 576px;
   }
 
-  .first .col-md-6:first-child .cycle-slideshow{
+  .first .col-xs-12:first-child .cycle-slideshow{
     float: left;
-    width: 50%;
+    width: 20%;
   }
 
   .first > .col-md-6 p{
@@ -214,14 +238,14 @@ code {
   }
 
     .btn-dukung{
-      margin: -90px 20px 0 0;
       position: fixed;
+      bottom: 10px;
       z-index: 100;
       cursor: pointer;
       right: 0;
       background: url(../img/btn-dukung.png);
-      width: 219px;
-      height: 236px;
+      width: 215px;
+      height: 215px;
       -webkit-transition: 0.5s;
          -moz-transition: 0.5s;
           -ms-transition: 0.5s;
@@ -237,22 +261,25 @@ code {
 
     .btn-video{
       position: absolute;
-      top: 31%;
+      width: 100%;
+      text-align: center;
       z-index: 100;
-      left: 49%;
-      padding: 10px;
-      margin-left: -90px;
       cursor: pointer;
     }
+    .btn-video img{
+      width: 30%;
+    }
 
-    @media(max-width: 768px) {
+    @media(min-width: 768px){
       .btn-video img{
-        width: 70%;
+        width: 20%;
+        margin-top: 9%;
       }
-
-      .btn-video{
-        top: 20%;
-        left: 54%;
+    }
+    @media(min-width: 992px){
+      .btn-video img{
+        width: 15%;
+        margin-top: 11%;
       }
     }
 
@@ -316,9 +343,9 @@ code {
     border-top: solid 1px transparent;
   }
   .second .left-cont h3{
-    font-family: 'NotoSans Bold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
     text-transform: uppercase;
-    color: #5AA015;
+    color: #4db043;
     font-size: 36px;
     margin: 50px 20px 0 20px;
   }
@@ -331,11 +358,11 @@ code {
   }
 
   .second .left-cont p{
-    font-family: 'NotoSans', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
     width: 80%;
     color: #585858;
     font-size: 17px;
-    margin: 30px 10% 0 10%;
+    margin: 30px 10% 0 20px;
     line-height: 30px;
   }
 
@@ -354,7 +381,7 @@ code {
       .third .hands-bg{
         background: url(../img/hands.jpg);
         width: 100%;
-        height: 702px;
+        height: 700px;
         -webkit-background-size: cover;
              -o-background-size: cover;
                 background-size: cover;
@@ -363,25 +390,30 @@ code {
         color: #FFF;
         background-position: center;
       }
+      @media(min-width: 992px){
+        .third .hands-bg{ 
+          height: 780px;
+        }
+      }
 
         .third .hands-bg h4{
           margin-top: 80px;
           font-size: 24px;
-          font-family: 'NotoSans', Arial, sans-serif;
+          font-family: 'Colette-Regular', Arial, sans-serif;
           text-transform: capitalize;
         }
 
         .third .hands-bg h1{
           margin-top: 30px;
           font-size: 46px;
-          font-family: 'NotoSans Bold', Arial, sans-serif;
+          font-family: 'Colette-Bold', Arial, sans-serif;
           text-transform: uppercase;
           line-height: 64px;
         }
 
         .third .hands-bg p{
           font-size: 16px;
-          font-family: 'NotoSans', Arial, sans-serif;
+          font-family: 'Colette-Regular', Arial, sans-serif;
           line-height: 23px;
           text-align: center;
         }
@@ -413,43 +445,52 @@ code {
           }
 
           .counter-number{
-            float: left;
-            background: rgba(255,255,255,0.8);
-            font-size: 43px;
+            display: inline-block;
+            background: url('../img/bg-counter.png');
             font-family: 'NotoSans Bold', Arial, sans-serif;
             color: #25327b;
-            margin-left: 10px;
-            padding: 3% 4%;
-            line-height: 43px;
-            
+            font-size: 1.5em;
+            width: 35px;
+            height: 46px;
+            line-height: 1.25em;
+            background-size: 100%;
+            margin: 15px auto 15px auto;
           }
-
+          @media(min-width: 768px){
+            .counter-number{
+              width: 76px;
+              height: 100px;
+              margin-left: 10px;
+              font-size: 3.5em;
+              line-height: 1em;
+            }
+          }
           .btn-green,
           .btn-green:active{
-            background: #5AA015;
+            background: url('../img/bg-green.png') repeat-x;
             color: #fff;
             font-size: 14px;
             padding: 15px 20px;
-            font-family: 'NotoSans Bold', Arial, sans-serif;
+            font-family: 'Colette-Bold', Arial, sans-serif;
             -webkit-transition: 0.5s;
                -moz-transition: 0.5s;
                 -ms-transition: 0.5s;
                  -o-transition: 0.5s;
                     transition: 0.5s;
-            float: left;
+            display: inline-block;
             margin-right: 20px;
             cursor: pointer;
           }
 
           .btn-green:hover{
-            background: #15A098;
+            background: url('../img/bg-grey.png') repeat-x;
             color: #fff;
             text-decoration: none;
           }
 
           .btn-tosca,
           .btn-tosca:active{
-            background: #15A098;
+            background: url('../img/bg-grey.png') repeat-x;
             color: #fff;
             font-size: 14px;
             padding: 15px 20px;
@@ -459,12 +500,12 @@ code {
                 -ms-transition: 0.5s;
                  -o-transition: 0.5s;
                     transition: 0.5s;
-            float: left;
+            display: inline-block;
             cursor: pointer;
           }
 
           .btn-tosca:hover{
-            background: #5AA015;
+            background: url('../img/bg-green.png') repeat-x;
             color: #fff;
             text-decoration: none;
           }
@@ -480,7 +521,7 @@ code {
           }
 
         .share-cont{
-          background: rgba(90,160,21,0.5);
+          background: rgba(77, 176, 67, 0.5);
           width: 24%;
           left: 50%;
           margin-left: -12%;
@@ -493,6 +534,7 @@ code {
         }
 
           .share-cont span{
+            font-family: "Colette-Bold";
             float: left;
             line-height: 28px;
             margin-left: 10%;
@@ -551,23 +593,30 @@ code {
       }
 
 #footer{
-  background: #F0F0F0;
-  height: 105px;
+  background: #dfdfdf;
 }
 
   .text-footer{
     margin-top: 30px;
-    width: 33%;
-    margin-left: 25%;
+    width: 55%;
+    margin-left: 6%;
+  }
+  @media(min-width: 992px){
+    .text-footer{
+      width: 33%;
+      margin-left: 15%;
+    }
   }
 
   .text-footer .clearfix p{
     float: left;
-    font-family: 'NotoSans', Arial, sans-serif;
+    font-family: 'Colette-Regular', Arial, sans-serif;
   }
 
     .text-footer .clearfix a{
-      float: left;
+      display: inline-block;
+      font-family: "Colette-Bold";
+      color: #4db043;
     }
 
     .text-footer a:nth-child(2){
@@ -588,6 +637,7 @@ code {
 
     .text-footer p{
       text-align: center;
+      font-family: "Colette-Bold";
     }
 
 .carousel{
@@ -658,10 +708,10 @@ have a fixed width and height (but it's not required).
   visibility: hidden;
   font-size: 24px;
   text-transform: uppercase;
-  color: #000;
+  color: #5EA211;
   height: 195px;
   width: 320px;
-  font-family: 'OpenSans Bold', Arial, sans-serif;
+  font-family: 'Colette-Bold', Arial, sans-serif;
   background: url(../img/bg-hover.png);
 }
 
@@ -799,26 +849,26 @@ have a fixed width and height (but it's not required).
 }
 
   #modal-dukung h3{
-    color: #0e5303;
+    color: #4db043;
     font-size: 24px;
-    font-family: 'OpenSans Bold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
     text-transform: uppercase;
     margin-top: 10px;
   }
 
   #modal-dukung p{
-    color: #000;
-    font-family: 'OpenSans Semibold', Arial, sans-serif;
+    color: #585858;
+    font-family: 'Colette-Light', Arial, sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
   }
 
   #modal-dukung .col-md-3 .school-cont{
-    background: #0e5303;
+    background: #4db043;
     text-transform: uppercase;
     color: #fff;
-    font-family: 'OpenSans Semibold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
     font-size: 13px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -868,7 +918,7 @@ have a fixed width and height (but it's not required).
   }
 
   .school-pagination .control{
-    width: 215px;
+    width: 145px;
     margin: auto;
   }
 
@@ -1083,15 +1133,6 @@ have a fixed width and height (but it's not required).
   .first > .col-md-6 p{
   }
 
-  .counter-number{
-    padding-left: 4%;
-    padding-right: 4%;
-    
-  }
-  .counter-number:first-child{
-    margin-left: 0;
-  }
-
   .third .hands-bg .counter{
     margin-bottom: 30px;
     width: 100% !important;
@@ -1102,10 +1143,10 @@ have a fixed width and height (but it's not required).
     margin-left: -15%;
   }
 
-  .text-footer{
+/*  .text-footer{
     width: 40%;
     margin-left: 20%;
-  }
+  }*/
 
   #modal-wallofpic .modal-content, 
   #modal-thanks .modal-content{
@@ -1171,10 +1212,10 @@ have a fixed width and height (but it's not required).
     width: 26%;
     margin-left: -11%;
   }
-  .text-footer {
+/*  .text-footer {
     width: 33%;
     margin-left: 20%;
-  }
+  }*/
   .navbar-default .navbar-nav li a{
     font-size: 12px;
   }
@@ -1223,7 +1264,7 @@ have a fixed width and height (but it's not required).
     margin-top: -42px;
     position: absolute;
     z-index: -1;
-    background: rgb(255, 255, 255);
+    background: #555553;
     padding-top: 30px;
   }
 
@@ -1328,14 +1369,6 @@ have a fixed width and height (but it's not required).
           width: 96%;
         }
 
-          .counter-number{
-            font-size: 21px;
-            line-height: 21px;
-            margin-left: 5px;
-            padding-left: 3.5%;
-            padding-right: 3%;
-          }
-
           .btn-green{
             font-size: 12px;
             float: none;
@@ -1367,11 +1400,6 @@ have a fixed width and height (but it's not required).
     height: auto;
   }
 
-    .logo-footer-cont{
-      width: 80%;
-      margin: auto;
-    }
-
     .text-footer{
       float: none;
       width: 100%;
@@ -1387,7 +1415,7 @@ have a fixed width and height (but it's not required).
       }
 
       .text-footer .clearfix a:nth-child(2){
-        margin-left: 10%;
+        /*margin-left: 10%;*/
       }
 
   #modal-dukung .modal-content{
@@ -1668,3 +1696,50 @@ have a fixed width and height (but it's not required).
   }
 }
 
+.intro {
+  background: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+.counter-value {
+  margin-top: 30%;
+  color: #0063a8;
+}
+.instruction {
+  color: #4db043;
+  font-family: "Colette-Regular";
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.collete-bold {
+  font-family: "Colette-Bold";
+}
+#footer {
+  text-align: center;
+  font-family: "Colette-Regular";
+  padding: 15px 0;
+  color: #585858;
+}
+#footer .text {
+  margin-top: 3%;
+}
+.text a:nth-child(2){
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.text a.last{
+  border-left: solid 1px gray;
+  padding-left: 10px;
+}
+
+.text a{
+  color: #5EA211;
+  font-family: 'Colette-Bold', Arial, sans-serif;
+}
+
+@media(min-width: 768px){
+  .inline {
+    display: inline-block;
+  }
+}

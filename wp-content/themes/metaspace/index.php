@@ -1,4 +1,4 @@
-<?php get_header(); //dd(get_field('jumlah_dukungan'));?>
+<?php get_header(); //dd(get_img_url_from_vote($_GET['source']));//dd(get_img_url_from_vote());//dd(get_field('jumlah_dukungan'));?>
 
   <body>
     <div id="fb-root"></div>
@@ -35,22 +35,26 @@
                 Dukung dan sebarkan gerakan ini agar lebih banyak anak-anak terlindungi.
               </p>
             </div>
-            <div class="col-md-8 col-md-offset-2 col-xs-11 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-lg-7 col-lg-offset-3">
+            <div class="col-xs-12 text-center">
               <div class="counter clearfix">
+                <p>TANGAN YANG TELAH MENDUKUNG:</p>
                 <?php
                   foreach (query_vote_split_to_array() as $value) { ?>
                     <div class="counter-number">
+                      <div class="counter-value">
                       <?php 
                         echo $value; 
                       ?>
+                      </div>
                     </div>
                  <?php 
                   }
                 ?>
                 <div class="clearfix"></div>
+                <p><small>*Mencakup dukungan yang diterima melalui tanda tangan siswa-siswa sekolah</small></p>
               </div>
             </div>
-            <div class="col-md-7 col-md-offset-3 col-xs-12 col-lg-5 col-lg-offset-4 col-sm-8 col-sm-offset-3">
+            <div class="col-md-12 text-center">
               <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
               <div class="btn-tosca" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
@@ -59,8 +63,10 @@
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                   <div class="modal-body clearfix">
-                    <h3>Sekolah yang Telah Mendukung</h3>
-                    <p>Ratusan sekolah telah memberikan dukungan kepada Misi Hidup Sehat Dettol</p>
+                    <h3>dukungan yang diterima</h3>
+                    <p>Ratusan sekolah telah berpartisipasi memberikan dukungan kepada Misi Hidup Sehat Dettol.<br/>
+Bergabunglah bersama mereka dengan memberikan dukungan Anda dan jadilah bagian dari Galeri Misi Hidup Sehat Dettol.
+</p>
                       <div class="cycle-slideshow school-pagination clearfix" data-cycle-slides=".page" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-prev=".prev" data-cycle-next=".next" data-cycle-pager=".pager">
                         <?php
                           $dataset = get_field('daftar_sekolah');
@@ -105,7 +111,6 @@
                           <div class="prev">
                             < Prev
                           </div>
-                          <div class="pager"></div>
 
                           <div class="next">
                             Next >
@@ -181,7 +186,7 @@
                       </div>
                       <p>Anda dapat menjadi bagian dari galeri <strong>Misi Hidup Sehat Dettol</strong> dengan memberikan dukungan dan menyebarkan inisiatif ini. </p>
                       <div class="text-center">
-                        <a href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
+                        <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/btn-dukung.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -190,9 +195,9 @@
             </div><!-- /.modal -->
             <div class="share-cont clearfix">
               <span>Sebarkan gerakan ini</span>
-              <a class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
+              <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
               </a>
-              <a class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+terus+hidup">
+              <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -205,8 +210,14 @@
                     <div class="col-md-6 hidden-xs col-sm-8">
                       <?php 
                         $user_ID = get_current_user_id();
-                        if($user_ID) { 
-                          echo get_avatar( $user_ID, 100 ); 
+                        if($user_ID) {
+                          if(get_img_url_from_vote($_GET['source'])[0]) {
+                      ?>
+                            <img src="<?php echo get_img_url_from_vote($_GET['source'])[0]->profile_picture; ?>" class='img-glow'/>
+                      <?php 
+                          } else {
+                            echo get_avatar( $user_ID, 100 );
+                          }
                         }
                       ?>
                       <div class="hand-mask">
@@ -234,9 +245,9 @@
                       </p>
                       <p>Klik share dan jadilah bagian dari Galeri <strong>Misi Hidup Sehat Dettol</strong>. </p>
                       <div class="clearfix">
-                        <a class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button-thankyou');" class="btn-share-fb" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
                         </a>
-                        <a class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Kunjungi+www.misihidupsehatdettol.com.+Ulurkan+tangan%2Csebarkan+%23MisiHidupSehatDettol+agar+lebih+banyak+anak+tetap+sehat%2C+impian+mereka+terus+hidup">
+                        <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button-thankyou');" class="twitter btn-share-tw" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
                         </a>
                       </div>
                       <h5>
@@ -272,15 +283,15 @@
         </div>
       </div>
       <div class="row forth">
-        <div class="col-md-3 col-sm-3 col-xs-6">
-          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <strong>#misihidupsehatdettol</strong>
+        <div class="col-xs-12 instruction text-center">
+          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <span class="collete-bold ">#misihidupsehatdettol</span>
         </div>
         <?php
           $tweets = searchTweets(3, '#misihidupsehatdettol');
           //d($tweets);
             if (!$tweets['error'] && $tweets){
               foreach ($tweets['statuses'] as $value) { ?>
-              <div class="col-md-3 col-sm-3 col-xs-6">
+              <div class="col-sm-4 col-xs-6">
                 <?php echo $value['text']; ?>    
                 <i class="fa fa-twitter"></i> - <?php echo "@".$value['user']['screen_name']; ?>
               </div>  

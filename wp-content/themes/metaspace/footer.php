@@ -1,30 +1,30 @@
 <div id="footer" class="clearfix">
-      <div class="container clearfix">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer.png" alt="" class="left hidden-xs">
-        <div class="clearfix hidden-sm hidden-lg hidden-md logo-footer-cont">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer.png" alt="">
-          <a href="http://www.dettol.co.id" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer-right.png" alt="">
-          </a>
-        </div>
-        
-        <div class="text-footer left">
-          <div class="clearfix">
-            <p>Copyright Dettol 2014</p>
-            <a href="http://legal.reckittbenckiser.com/ID/PrivacyStatement.htm" target="_blank">Privacy Policy</a>
-            <a href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
-          </div>
-          <p>
-            Untuk informasi lebih lanjut: <a href="http://dettol.co.id" target="_blank">www.dettol.co.id</a>
-          </p>
-          
-        </div>
-        <a href="http://www.dettol.co.id" target="_blank" class="hidden-xs">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer-right.png" alt="" class="right">
-        </a>
+  <div class="container clearfix">
+    <div class="row">
+    <div class="col-sm-2">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer.png" alt="">
+      <a href="http://www.dettol.co.id" target="_blank" class="hidden-sm hidden-lg hidden-md">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer-right.png" alt="">
+      </a>
+    </div>
+    <div class="col-sm-8">
+      <div class="text">
+        <p class="inline">Copyright Dettol 2015</p>
+        <a href="http://legal.reckittbenckiser.com/ID/PrivacyStatement.htm" target="_blank">Privacy Policy</a>
+        <a class="last" href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
+        <p>
+          Untuk informasi lebih lanjut: <a href="http://dettol.co.id" target="_blank">www.dettol.co.id</a>
+        </p>
       </div>
     </div>
-
+    <div class="col-sm-2">
+      <a href="http://www.dettol.co.id" target="_blank" class="hidden-xs">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-footer-right.png" alt="" class="right">
+      </a>
+    </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Le javascript
