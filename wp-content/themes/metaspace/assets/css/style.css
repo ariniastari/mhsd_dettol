@@ -775,10 +775,11 @@ have a fixed width and height (but it's not required).
     .modal-dialog{
       width: 995px;
     }
+    #modal-video .modal-dialog {
+      width: 600px;
+    }
   }
-  #modal-video .modal-dialog {
-    width: 600px;
-  }
+  
   .modal-butuh{
     background: url(../img/popup.jpg);
     width: 995px;
