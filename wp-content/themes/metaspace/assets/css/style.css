@@ -565,27 +565,21 @@ code {
       }
     }
 
-      .forth.row .col-md-3:first-child{
-        color: #61823E;
-        padding: 1.5%;
-        height: 120px;
-      }
-
-      .forth.row .col-md-3:nth-child(2){
+      .forth.row .col-sm-4:first-child{
         background: #FCB140;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-md-3:nth-child(3){
+      .forth.row .col-sm-4:nth-child(2){
         background: #dbcb3b;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-md-3:nth-child(4){
+      .forth.row .col-sm-4:nth-child(3){
         background: #b0c731;
         color: #fff;
         padding: 1.5%;
