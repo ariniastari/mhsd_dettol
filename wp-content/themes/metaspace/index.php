@@ -55,7 +55,7 @@
               </div>
             </div>
             <div class="col-md-12 text-center">
-              <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div>
+              <!-- <div class="btn-green" data-toggle="modal" data-target="#modal-dukung">Sekolah yang Telah Mendukung</div> -->
               <div class="btn-tosca" data-toggle="modal" data-target="#modal-wallofpic">Galeri Dukungan Anda</div>
             </div>
             <div class="modal fade" id="modal-dukung">
