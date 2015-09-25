@@ -565,21 +565,21 @@ code {
       }
     }
 
-      .forth.row .col-sm-4:first-child{
+      .forth.row .col-sm-4:nth-child(2){
         background: #FCB140;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-sm-4:nth-child(2){
+      .forth.row .col-sm-4:nth-child(3){
         background: #dbcb3b;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-sm-4:nth-child(3){
+      .forth.row .col-sm-4:nth-child(4){
         background: #b0c731;
         color: #fff;
         padding: 1.5%;
