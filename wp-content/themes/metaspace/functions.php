@@ -67,7 +67,7 @@ function check_post_value() {
 		$value = get_field("jumlah_dukungan");
 		update_field('jumlah_dukungan', $value + 1);
 		// dd($value);
-		$redirect = home_url().'/#trrimakasih';
+		$redirect = home_url().'/#terimakasih';
 		redirect_to($redirect);
 		//dd($redirect);
 		//update_field('jumlah_dukungan', $value + 1);

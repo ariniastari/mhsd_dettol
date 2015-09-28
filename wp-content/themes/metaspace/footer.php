@@ -70,7 +70,7 @@
     });
 
     $(function() {
-      if (window.location.hash.indexOf("#trrimakasih") !== -1) {
+      if (window.location.hash.indexOf("#terimakasih") !== -1) {
           $("#modal-thanks").modal();
       }
 
