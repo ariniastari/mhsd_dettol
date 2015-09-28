@@ -44,7 +44,7 @@ code {
   
   .navbar-default{
     height: 115px;
-    background: #555553;
+    background: #8b8b89;
     border-bottom: 0;
     -webkit-box-shadow: 1px 0px 2px 0px #BCBCBC;
             box-shadow: 1px 0px 2px 0px #BCBCBC;
@@ -221,12 +221,12 @@ code {
     margin: 30px auto 0 auto;
     font-size: 17px;
     line-height: 26px;
-    font-family: 'SegoeUI Semibold', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
   }
 
   .first > .col-md-6 p span{
     color: #E4FF00;
-    font-family: 'SegoeUI Bold', Arial, sans-serif;
+    font-family: 'Colette-Bold', Arial, sans-serif;
   }
 
   .first > .col-md-6 p.last{
@@ -565,27 +565,21 @@ code {
       }
     }
 
-      .forth.row .col-md-3:first-child{
-        color: #61823E;
-        padding: 1.5%;
-        height: 120px;
-      }
-
-      .forth.row .col-md-3:nth-child(2){
+      .forth.row .col-sm-4:nth-child(2){
         background: #FCB140;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-md-3:nth-child(3){
+      .forth.row .col-sm-4:nth-child(3){
         background: #dbcb3b;
         color: #fff;
         padding: 1.5%;
         height: 120px;
       }
 
-      .forth.row .col-md-3:nth-child(4){
+      .forth.row .col-sm-4:nth-child(4){
         background: #b0c731;
         color: #fff;
         padding: 1.5%;
@@ -769,10 +763,17 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-dialog{
-    width: 995px;
     margin: 70px auto 0 auto;
   }
-
+  @media(min-width: 992px){
+    .modal-dialog{
+      width: 995px;
+    }
+    #modal-video .modal-dialog {
+      width: 600px;
+    }
+  }
+  
   .modal-butuh{
     background: url(../img/popup.jpg);
     width: 995px;
@@ -810,17 +811,17 @@ have a fixed width and height (but it's not required).
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > h3{
         font-size: 24px;
         color: #5AA015;
-        font-family: 'OpenSans Bold', Arial, sans-serif;
+        font-family: 'Colette-Bold', Arial, sans-serif;
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > h3 span{
         color: #585858;
-        font-family: 'OpenSans Light', Arial, sans-serif;
+        font-family: 'Colette-Light', Arial, sans-serif;
       }
 
       .modal-butuh .modal-body > .col-md-6:nth-child(2) > p{
         color: #000;
-        font-family: 'OpenSans Semibold', Arial, sans-serif;
+        font-family: 'Colette-Regular', Arial, sans-serif;
         font-size: 16px;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -832,7 +833,7 @@ have a fixed width and height (but it's not required).
         top: -60px;
         right: 0;
         font-size: 60px;
-        font-family: 'OpenSans Light', Arial, sans-serif;
+        font-family: 'Colette-Light', Arial, sans-serif;
         opacity: 1;
       }
 
@@ -901,7 +902,7 @@ have a fixed width and height (but it's not required).
     cursor: pointer;
     color: #5AA015;
     float: left;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
     margin-right: 30px;
   }
 
@@ -909,7 +910,7 @@ have a fixed width and height (but it's not required).
     cursor: pointer;
     color: #5AA015;
     float: left;
-    font-family: 'OpenSans Light', Arial, sans-serif;
+    font-family: 'Colette-Light', Arial, sans-serif;
     margin-left: 30px;
   }
 
@@ -918,13 +919,13 @@ have a fixed width and height (but it's not required).
   }
 
   .school-pagination .control{
-    width: 145px;
+    width: 150px;
     margin: auto;
   }
 
-.modal-dialog{
+/*.modal-dialog{
   width: 100%;
-}
+}*/
 
 #modal-vote .btn-tosca {
   float: none;
@@ -972,7 +973,7 @@ have a fixed width and height (but it's not required).
     #modal-wallofpic .modal-body .col-md-6:last-child h3,
     #modal-thanks .modal-body .col-md-6:last-child h3{
       color: #fff600;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       font-size: 24px;
       text-transform: uppercase;
       margin-bottom: 20px;
@@ -993,7 +994,7 @@ have a fixed width and height (but it's not required).
     #modal-wallofpic .modal-body .col-md-6:last-child p,
     #modal-thanks .modal-body .col-md-6:last-child p{
       color: #fff;
-      font-family: 'SegoeUI Semibold', Arial, sans-serif;
+      font-family: 'Colette-Regular', Arial, sans-serif;
       font-size: 16px;
       margin-bottom: 30px;
       width: 100%;
@@ -1009,25 +1010,25 @@ have a fixed width and height (but it's not required).
       float: left;
       padding: 10px 20px;
       font-size: 25px;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       margin-right: 10px;
     }
 
 #modal-video .modal-content{
-  width: 60%;
+  /*width: 60%;*/
   height: 400px;
   margin: auto;
 }
 
     #modal-thanks .modal-body .col-md-6:last-child h5{
       color: #DAF902;
-      font-family: 'OpenSans Bold', Arial, sans-serif;
+      font-family: 'Colette-Bold', Arial, sans-serif;
       font-size: 16px;
       margin-top: 50px;
     }
     #modal-thanks .modal-body .col-md-6:last-child h5 span{
       color: #FFF;
-      font-family: 'OpenSans Light', Arial, sans-serif;
+      font-family: 'Colette-Light', Arial, sans-serif;
       line-height: 24px;
     }
 
@@ -1700,6 +1701,7 @@ have a fixed width and height (but it's not required).
   background: #ffffff;
   text-align: center;
   padding: 50px;
+  font-size: 1.25em;
 }
 .counter-value {
   margin-top: 30%;
