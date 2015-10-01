@@ -11,7 +11,7 @@
       <div class="text">
         <p class="inline">Copyright Dettol 2015</p>
         <a href="http://legal.reckittbenckiser.com/ID/PrivacyStatement.htm" target="_blank">Privacy Policy</a>
-        <a class="last" href="http://www.dettol.co.id/contactus.php" target="_blank">Hubungi Kami</a>
+        <a class="last" href=" http://www.dettol.co.id/contact-us/" target="_blank">Hubungi Kami</a>
         <p>
           Untuk informasi lebih lanjut: <a href="http://dettol.co.id" target="_blank">www.dettol.co.id</a>
         </p>
