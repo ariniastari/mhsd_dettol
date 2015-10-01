@@ -20,6 +20,7 @@
       <?php get_template_part('dettol', 'intro'); ?>
 
       <?php get_template_part('dettol', 'need'); ?>
+       <?php get_template_part('dettol', 'history'); ?>
 
       <div class="row third" id="third">
         <div class="col-md-12">

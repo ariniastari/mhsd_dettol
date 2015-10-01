@@ -1745,3 +1745,88 @@ have a fixed width and height (but it's not required).
     display: inline-block;
   }
 }
+
+.history {
+  background: url(../img/bg-hist.jpg);
+  background-size: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+  .history h2 {
+    font-family: "Colette-Bold";
+    color: #60605e;
+  }
+  .history a {
+    font-family: "Colette-Light";
+    color: #7c887c;
+    text-decoration: underline;
+    font-size: 1.25em;
+  }
+  .history .add_margin {
+    margin-top: 50px;
+  }
+@media(min-width: 992px){
+  .history .col-md-4 {
+    text-align: right;
+  }
+  .history .col-md-8 {
+    text-align: left;
+  }
+  .history .add_margin {
+    margin-top: 80px;
+  }
+}
+
+#history_modal .modal-content {
+  background: url(../img/bg-popup-history.jpg);
+  background-size: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+#history_modal .modal-content .close {
+  right: -40px;
+}
+.flag-year {
+  background: url(../img/bg-year.png);
+  height: 63px;
+  width: 167px;
+  font-family: "Colette-Bold";
+  color: #fff;
+  font-size: 2.5em;
+  padding: 0px 30px;
+  margin-top: 35px;
+}
+ul.baris-image {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 10px;
+}
+ul.baris-image li {
+  float: left;
+  width: 50%;
+}
+ul.baris-image.no-width li {
+  width: auto;
+}
+ul.baris-image li .img-responsive {
+  width: 100%;
+}
+@media(min-width: 992px){
+  ul.baris-image li {
+    width: 25%;
+  }
+  ul.baris-image.no-width li {
+    width: auto;
+  }
+}
+ul.checkmark {
+  list-style-image: url(../img/checked.png);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+  ul.checkmark li {
+    margin-top: 15px;
+  }
