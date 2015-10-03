@@ -290,13 +290,15 @@ Bergabunglah bersama mereka dengan memberikan dukungan Anda dan jadilah bagian d
         <?php
           $tweets = searchTweets(3, '#misihidupsehatdettol');
           //d($tweets);
+            $counter = 1;
             if (!$tweets['error'] && $tweets){
               foreach ($tweets['statuses'] as $value) { ?>
-              <div class="col-sm-4 col-xs-6">
+              <div class="col-sm-4 <?php echo ($counter > 2 ? 'col-xs-12' : 'col-xs-6') ?>">
                 <?php echo $value['text']; ?>    
                 <i class="fa fa-twitter"></i> - <?php echo "@".$value['user']['screen_name']; ?>
               </div>  
             <?php
+              $counter++;
             }
           }
         ?>
