@@ -17,6 +17,7 @@
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li><a href="#second">mereka yang membutuhkan</a></li>
+      <li><a href="#history-menu">Sejarah misi hidup sehat</a></li>
       <li><a href="#third">Dukungan yang diterima</a></li>
       <li><a class="wider" href="" data-toggle="modal" data-target="#modal-wallofpic">GALERI DUKUNGAN ANDA</a></li>
       <li class="active"><a onclick="ga('send', 'event', 'button', 'click', 'vote-button-menu');" href="<?php echo site_url(); ?>/?dettol_vote=true">ULURKAN <br/>TANGAN</a></li>

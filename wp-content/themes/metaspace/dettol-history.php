@@ -1,4 +1,4 @@
-<div class="row history">
+<div class="row history" id="history-menu">
 	<div class="col-md-4">
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img-hist.png">
 	</div>
