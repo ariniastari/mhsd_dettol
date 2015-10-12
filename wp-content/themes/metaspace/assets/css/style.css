@@ -239,7 +239,7 @@ code {
 
     .btn-dukung{
       position: fixed;
-      bottom: 10px;
+      bottom: 80px;
       z-index: 100;
       cursor: pointer;
       right: 0;
@@ -1829,4 +1829,22 @@ ul.checkmark {
 }
   ul.checkmark li {
     margin-top: 15px;
+  }
+
+.counter-fixed {
+  position: fixed;
+  bottom: 10px;
+  z-index: 101;
+  right: 20px;
+}
+  .counter-fixed .counter-number {
+    width: 22px;
+    height: 28px;
+    margin-left: 0px;
+    line-height: 1em;
+    font-size: 0.8em;
+    margin-bottom: 0;
+  }
+  .counter-fixed p {
+    font-size: 0.8em;
   }

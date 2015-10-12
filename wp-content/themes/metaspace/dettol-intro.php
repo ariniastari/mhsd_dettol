@@ -216,7 +216,22 @@
   <div class="col-xs-12 intro">
     <?php the_field('intro_description'); ?>
     <a onclick="ga('send', 'event', 'button', 'click', 'vote-button');" href="<?php echo site_url(); ?>/?dettol_vote=true"><div class="btn-dukung"></div></a>
-    
+    <div class="counter counter-fixed clearfix hidden-xs">
+      <?php
+        foreach (query_vote_split_to_array() as $value) { ?>
+          <div class="counter-number">
+            <div class="counter-value">
+            <?php 
+              echo $value; 
+            ?>
+            </div>
+          </div>
+       <?php 
+        }
+      ?>
+      <div class="clearfix"></div>
+      <p><small>Orang sudah mengulurkan tangan</small></p>
+    </div>
   </div>
   <div class="modal fade" id="modal-video">
     <div class="modal-dialog">
