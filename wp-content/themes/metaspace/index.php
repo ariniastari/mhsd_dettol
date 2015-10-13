@@ -198,7 +198,7 @@ Bergabunglah bersama mereka dengan memberikan dukungan Anda dan jadilah bagian d
               <span>Sebarkan gerakan ini</span>
               <a onclick="ga('send', 'event', 'button', 'click', 'fbshare-button');" class="fb-white" href="<?php echo site_url(); ?>/wp-login.php?loginFacebook=1">
               </a>
-              <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23MisiHidupSehatDettol%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
+              <a onclick="ga('send', 'event', 'button', 'click', 'twshare-button');" class="twitter twitter-white" target="_blank" href="https://twitter.com/share?text=Ulurkan%20tangan%2Csebarkan%20%23karenatangan%20agar%20lebih%20banyak%20anak%20tetap%20sehat%2C%20impian%20mereka%20terus%20hidup.%20Kunjungi">
               </a>
             </div>
             <div class="modal fade" id="modal-thanks">
@@ -285,10 +285,10 @@ Bergabunglah bersama mereka dengan memberikan dukungan Anda dan jadilah bagian d
       </div>
       <div class="row forth">
         <div class="col-xs-12 instruction text-center">
-          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <span class="collete-bold ">#misihidupsehatdettol</span>
+          Anda juga bisa memberikan dukungan dengan menggunakan hashtag <span class="collete-bold ">#karenatangan</span>
         </div>
         <?php
-          $tweets = searchTweets(3, '#misihidupsehatdettol');
+          $tweets = searchTweets(3, '#karenatangan');
           //d($tweets);
             $counter = 1;
             if (!$tweets['error'] && $tweets){

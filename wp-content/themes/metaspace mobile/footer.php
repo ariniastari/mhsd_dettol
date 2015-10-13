@@ -1,7 +1,7 @@
     <div id="topfoo">
-        <p class="one">Anda juga bisa memberikan dukungan dengan menggunakan hashtag #misihidupsehatdettol</p>
+        <p class="one">Anda juga bisa memberikan dukungan dengan menggunakan hashtag #karenatangan</p>
         <?php
-            $tweets = searchTweets(3, '#misihidupsehat');
+            $tweets = searchTweets(3, '#karenatangan');
             $counter = 2;
             foreach ($tweets['statuses'] as $value) { 
                 switch ($counter) {
